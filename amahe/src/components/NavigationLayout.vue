@@ -51,6 +51,7 @@ import menu from "@/assets/menu.png";
     background-color: white;
     width: 100%;
     position: fixed;
+    z-index:1;
     box-shadow: rgba(10, 83, 32, 0.1) 0px 10px 10px;
   }
   .nav-content {

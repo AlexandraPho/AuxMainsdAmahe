@@ -1,11 +1,15 @@
 <script setup>
 import NavigationLayout from './components/NavigationLayout.vue'
 import AboutMeLayout from './components/AboutMeLayout.vue'
+import ProductLayout from './components/ProductLayout.vue'
+import PricesLayout from './components/PricesLayout.vue'
 </script>
 
 <template>
    <NavigationLayout/>
    <AboutMeLayout/>
+   <ProductLayout/>
+   <PricesLayout/>
   <!--<header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
