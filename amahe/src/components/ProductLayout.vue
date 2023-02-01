@@ -1,24 +1,131 @@
 <script>
+import star from "@/assets/etoile.png";
+import ayurveda from "@/assets/ayurveda.png";
+import swedish from "@/assets/swedish.png";
+import shiatsu from "@/assets/shiatsu.png";
+import bali from "@/assets/balinese.png";
+import reflexo from "@/assets/reflexologie.png";
+
+
 export default {
+  data() {
+      return {
+        star: star,
+        ayurveda: ayurveda,
+        swedish: swedish,
+        shiatsu: shiatsu,
+        bali: bali,
+        reflexo: reflexo,
+        };
+    },
 }
 </script>
 
 <template>
-  <div class="block-container">
+  <div id="product">
+    <hr>
     <h1 class="titles-components">
-      A propos de moi
+      Les massages que je vous propose
     </h1>
       <div class="container">
-        <section class="about-me">
-          <div class="text">
-            <h3 class="titles">
-              À l'écoute de votre corps
+        <section class="massages">
+          <!--Massage étoile-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="star">
+            <h3 class="massage-title">
+             Massage étoile
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu massa a turpis commodo fermentum. Ut euismod leo et lacinia mattis. Integer quis risus quam. Donec dui libero, sollicitudin ultricies mattis eu, tincidunt bibendum sapien. Sed iaculis, ex quis pellentesque luctus, massa dolor ultricies mauris, a feugiat est quam at nisi. In mollis, mi eu tincidunt cursus, ligula massa rhoncus odio, sed auctor velit tortor at quam. Cras venenatis ornare massa molestie malesuada. Integer pretium dolor eu hendrerit laoreet. Phasellus in orci pellentesque ligula tristique tempus. Fusce eleifend arcu sed velit auctor facilisis. Vivamus sit amet ipsum nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              Appaisement et profonde relaxation par la stimulation des zones réflexes des cinq extrémités du corps (tête, mains, pieds)
+            </p>
+          </div>
+          <!--Massage ayurvédique-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="ayurveda">
+            <h3 class="massage-title">
+             Ayurvédique
+            </h3>
+            <p>
+              Relaxation profonde, permet de relâcher les tensions nerveuses et musculaires qui entravent la libre circulation de l'énergie dans le corps.ulation des zones réflexes des cinq extrémités du corps (tête, mains, pieds)
+            </p>
+          </div>
+          <!--Massage suedois-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="swedish">
+            <h3 class="massage-title">
+              Suédois
+            </h3>
+            <p>
+              Détend et relaxe le corps comme l’esprit. Particulièrement apaisant, il est apprécié pour sa capacité à diminuer les effets du stress sur le corps.            
+            </p>
+          </div>
+          <!--Massage shiatsu-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="shiatsu">
+            <h3 class="massage-title">
+             Shiatsu
+            </h3>
+            <p>
+              Étirements et pressions sur certains points de façon à faciliter la libre circulation de l'énergie.            
+            </p>
+          </div>
+          <!--Massage balinais-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="bali">
+            <h3 class="massage-title">
+             Balinais
+            </h3>
+            <p>
+              Harmonise différentes techniques à la fois relaxantes et énergétiques, douces et toniques. Il apporte ainsi une parfaite harmonie entre le corps et l’esprit.              
+            </p>
+          </div>
+          <!--Massage réflexologie-->
+          <div class="massage-type">
+            <img class="icon" v-bind:src="reflexo">
+            <h3 class="massage-title">
+             Réflexologie plantaire douce
+            </h3>
+            <p>
+              Relaxation profonde, bien-être global tant sur le plan physique que psychique et permet de relâcher les tensions.              
             </p>
           </div>
         </section>
       </div>
   </div>
 </template>
+
+<style scoped>
+
+.massage-title {
+    font-weight: bold;
+    color: #334435; /*dark green*/
+  }
+  p {
+    margin-top: 0.5em;
+  }
+
+/*Smartphone Size*/
+@media only screen and (max-width: 680px) {
+
+  .titles-components {
+  text-align: center;
+}
+  .massages {
+    margin: 1.5em;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.7em;
+    background-color: #eff8f0;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    height: 19em;
+  }
+  .icon {
+    width: 3em;
+  }
+  
+}
+</style>
