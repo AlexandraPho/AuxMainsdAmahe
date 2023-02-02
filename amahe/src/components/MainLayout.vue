@@ -1,10 +1,12 @@
 <script>
 import office from "@/assets/office.jpeg";
+import hand1 from "@/assets/hand1.jpg";
 
 export default {
   data() {
       return {
         office: office,
+        hand1: hand1,
         };
     },
 }
@@ -13,9 +15,7 @@ export default {
 <template>
   <div id="main">
     <img class="office" v-bind:src="office"> 
-    <!--<h2 class="titles-components">
-      A propos de moi
-    </h2>-->
+    <img class="hand1" v-bind:src="hand1">
       <section class="block-container">
         <div class="text">
           <h2 class="first-title"> 
