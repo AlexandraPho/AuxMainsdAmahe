@@ -80,7 +80,6 @@ import menu from "@/assets/menu.png";
     color: #89b68e;
   }
   a {
-
     text-decoration: none;
   }
   .btn-form {
