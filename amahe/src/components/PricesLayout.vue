@@ -108,13 +108,20 @@ export default {
 </template>
 
 <style scoped>
+#prices {
+  margin-top: 2em;
+}
+.titles-components,
+h3,
+p {
+  color: #43655A;
+}
 .price {
     background-color: #d1e4d4;
   }
 h3 {
   font-weight: bold;
   text-transform: uppercase;
-  color: #334435; /*dark green*/
   margin-bottom: 0.5em;
 }
 span {
@@ -127,31 +134,24 @@ span {
 .titles-components {
   text-align: center;
 }
-.massage-type,
-.package-type,
-.time-type {
-
-}
 .container-prices {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 .prices {
-  margin: 1.5em;
+  margin: 2em;
 }
 .massage-type,
 .package-type,
 .time-type {
-display: flex;
-flex-direction: column;
-
-text-align: center;
-border-radius: 0.7em;
-background-color: #eff8f0;
-padding: 1em;
-margin-bottom: 1.2em;
- }
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;
+  background-color: #f6f6f6;
+  padding: 1.2em;
+  margin-bottom: 1.2em;
+}
 .price {
   width: 9em;
   display: flex;
@@ -159,7 +159,7 @@ margin-bottom: 1.2em;
   justify-content: center;
   border-radius: 0.7em;
   margin-bottom: 1.2em;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 }

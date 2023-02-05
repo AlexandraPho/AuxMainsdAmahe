@@ -129,15 +129,15 @@ p {
   text-align: center;
 }
   .massages {
-    margin: 1.5em;
+    margin: 2em;
   }
   .massage-type {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 0.7em;
+    border-radius: 1.5em;
     background-color: #f6f6f6;
-    padding: 1em;
+    padding: 1.5em;
     margin-bottom: 1.2em;
     height: 19em;
   }
