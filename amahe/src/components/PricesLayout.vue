@@ -125,7 +125,6 @@ span {
 }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-
 .titles-components {
   text-align: center;
   margin: 1em;
@@ -158,6 +157,5 @@ span {
   margin-bottom: 1.2em;
   padding: 1.5em;
 }
-
 }
 </style>

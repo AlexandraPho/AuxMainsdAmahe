@@ -5,8 +5,6 @@ import swedish from "@/assets/swedish.png";
 import shiatsu from "@/assets/shiatsu.png";
 import bali from "@/assets/balinese.png";
 import reflexo from "@/assets/reflexologie.png";
-
-
 export default {
   data() {
       return {
@@ -106,7 +104,6 @@ export default {
 </template>
 
 <style scoped>
-
 #product {
   margin-top: 2em;
 }
@@ -123,10 +120,8 @@ p {
   p {
     margin-top: 0.5em;
   }
-
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-
   .titles-components {
   text-align: center;
   margin: 1em;

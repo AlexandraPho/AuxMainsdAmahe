@@ -88,7 +88,7 @@ export default {
   p {
     color: #548086;
   }
- 
+
   /*Smartphone Size*/
   @media only screen and (max-width: 680px) {
   #main {
@@ -119,6 +119,16 @@ export default {
     font-size: 1.5em;
   }
   .second-span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
     font-family: fantasy;
     margin-left: 0.3em;
     font-style: italic;
