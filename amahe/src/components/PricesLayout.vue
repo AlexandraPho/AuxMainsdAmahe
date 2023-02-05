@@ -21,28 +21,23 @@ export default {
             Balinais<br>
             Réflexologie plantaire douce
           </p>
-        </div>
-        <div class="container-prices">
-          <!--Price for 60'-->
-          <div class="price">
-            <p>
-              60 minutes de massage
-            </p>
-            <span>
-              65 euros
-            </span>
-          </div>
-          <!--Price for 90'-->
-          <div class="price">
-            <p>
-              90 minutes de massage
-            </p>
-            <span>
-              95 euros
-            </span>
+          <div class="container-prices">
+            <!--Price for 60'-->
+              <p>
+                60 minutes de massage
+              </p>
+              <span>
+                65 euros
+              </span>
+            <!--Price for 90'-->
+              <p>
+                90 minutes de massage
+              </p>
+              <span>
+                95 euros
+              </span>
           </div>
         </div>
-
         <!--Package-->
         <div class="package-type">
           <h3>Les forfaits bien-être *</h3>
@@ -108,13 +103,18 @@ export default {
 </template>
 
 <style scoped>
-.price {
-    background-color: #d1e4d4;
-  }
+#prices {
+  margin-top: 2em;
+  background-color: #F8F1E3;
+}
+.titles-components,
+h3,
+p {
+  color: #2f4858;
+}
 h3 {
   font-weight: bold;
   text-transform: uppercase;
-  color: #334435; /*dark green*/
   margin-bottom: 0.5em;
 }
 span {
@@ -123,14 +123,10 @@ span {
 }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-
 .titles-components {
   text-align: center;
-}
-.massage-type,
-.package-type,
-.time-type {
-
+  margin: 1em;
+  padding-top: 1.5em;
 }
 .container-prices {
   display: flex;
@@ -138,20 +134,18 @@ span {
   text-align: center;
 }
 .prices {
-  margin: 1.5em;
+  margin: 2em;
 }
 .massage-type,
 .package-type,
 .time-type {
-display: flex;
-flex-direction: column;
-
-text-align: center;
-border-radius: 0.7em;
-background-color: #eff8f0;
-padding: 1em;
-margin-bottom: 1.2em;
- }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;;
+  padding: 1.2em;
+  margin-bottom: 1.2em;
+}
 .price {
   width: 9em;
   display: flex;
@@ -159,8 +153,7 @@ margin-bottom: 1.2em;
   justify-content: center;
   border-radius: 0.7em;
   margin-bottom: 1.2em;
-  padding: 1em;
+  padding: 1.5em;
 }
-
 }
 </style>
