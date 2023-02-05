@@ -135,7 +135,7 @@ p {
     flex-direction: column;
     justify-content: center;
     border-radius: 1.5em;
-    background-color: #f8f1e3;
+    background-color: #eff8f0;
     padding: 1.5em;
     margin-bottom: 1.2em;
     height: 19em;

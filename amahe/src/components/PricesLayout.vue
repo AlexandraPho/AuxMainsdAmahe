@@ -104,7 +104,7 @@ export default {
 
 <style scoped>
 #prices {
-  margin-top: em;
+  margin-top: 2em;
   background-color: #F8F1E3;
 }
 .titles-components {
@@ -129,6 +129,9 @@ span {
   text-align: center;
   margin: 1em;
   padding-top: 1.5em;
+}
+.container {
+  height: 70em;
 }
 .container-prices {
   display: flex;

@@ -28,7 +28,7 @@ export default {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu massa a turpis commodo fermentum. 
           </p>
         </div>
-        <button class="btn-form"><a href="#form" class="button">Les massages</a></button>
+        <button class="btn-form"><a href="#product" class="button">Les massages</a></button>
       </section>
   </div>
 </template>
@@ -101,6 +101,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1.5em;
   }
   .hand1 {
     margin-top: 9em;
