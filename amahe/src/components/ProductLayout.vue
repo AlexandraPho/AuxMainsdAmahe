@@ -110,10 +110,12 @@ export default {
 #product {
   margin-top: 2em;
 }
-.titles-components,
+.titles-components {
+  color: #324B4E;
+}
 .massage-title,
 p { 
-  color: #2f4858;
+  color: #548086;
 }
 .massage-title {
     font-weight: bold;
@@ -138,7 +140,7 @@ p {
     flex-direction: column;
     justify-content: center;
     border-radius: 1.5em;
-    background-color: #f6f6f6;
+    background-color: #f8f1e3;
     padding: 1.5em;
     margin-bottom: 1.2em;
     height: 19em;

@@ -104,13 +104,15 @@ export default {
 
 <style scoped>
 #prices {
-  margin-top: 2em;
+  margin-top: em;
   background-color: #F8F1E3;
 }
-.titles-components,
+.titles-components {
+  color: #324B4E;
+}
 h3,
 p {
-  color: #2f4858;
+  color: #548086;
 }
 h3 {
   font-weight: bold;
@@ -136,8 +138,6 @@ span {
 }
 .prices {
   margin: 2em;
-
-
 }
 .massage-type,
 .package-type,
