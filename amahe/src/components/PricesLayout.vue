@@ -123,7 +123,6 @@ span {
 }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-
 .titles-components {
   text-align: center;
   margin: 1em;
@@ -136,8 +135,6 @@ span {
 }
 .prices {
   margin: 2em;
-
-
 }
 .massage-type,
 .package-type,
@@ -158,6 +155,5 @@ span {
   margin-bottom: 1.2em;
   padding: 1.5em;
 }
-
 }
 </style>
