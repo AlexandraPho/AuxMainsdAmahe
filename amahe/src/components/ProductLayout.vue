@@ -113,7 +113,7 @@ export default {
 .titles-components,
 .massage-title,
 p { 
-  color: #43655A;
+  color: #2f4858;
 }
 .massage-title {
     font-weight: bold;
@@ -127,6 +127,8 @@ p {
 
   .titles-components {
   text-align: center;
+  margin: 1em;
+  padding-top: 1.5em;
 }
   .massages {
     margin: 2em;

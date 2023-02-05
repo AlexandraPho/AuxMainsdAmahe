@@ -21,28 +21,23 @@ export default {
             Balinais<br>
             Réflexologie plantaire douce
           </p>
+          <div class="container-prices">
+            <!--Price for 60'-->
+              <p>
+                60 minutes de massage
+              </p>
+              <span>
+                65 euros
+              </span>
+            <!--Price for 90'-->
+              <p>
+                90 minutes de massage
+              </p>
+              <span>
+                95 euros
+              </span>
+          </div>
         </div>
-        <div class="container-prices">
-          <!--Price for 60'-->
-         
-            <p>
-              60 minutes de massage
-            </p>
-            <span>
-              65 euros
-            </span>
-
-          <!--Price for 90'-->
-          
-            <p>
-              90 minutes de massage
-            </p>
-            <span>
-              95 euros
-            </span>
-
-        </div>
-
         <!--Package-->
         <div class="package-type">
           <h3>Les forfaits bien-être *</h3>
@@ -110,15 +105,13 @@ export default {
 <style scoped>
 #prices {
   margin-top: 2em;
+  background-color: #F8F1E3;
 }
 .titles-components,
 h3,
 p {
-  color: #43655A;
+  color: #2f4858;
 }
-.price {
-    background-color: #d1e4d4;
-  }
 h3 {
   font-weight: bold;
   text-transform: uppercase;
@@ -133,6 +126,8 @@ span {
 
 .titles-components {
   text-align: center;
+  margin: 1em;
+  padding-top: 1.5em;
 }
 .container-prices {
   display: flex;
@@ -141,14 +136,16 @@ span {
 }
 .prices {
   margin: 2em;
+
+
 }
 .massage-type,
 .package-type,
 .time-type {
+  background-color: white;
   display: flex;
   flex-direction: column;
-  border-radius: 1.5em;
-  background-color: #f6f6f6;
+  border-radius: 1.5em;;
   padding: 1.2em;
   margin-bottom: 1.2em;
 }
