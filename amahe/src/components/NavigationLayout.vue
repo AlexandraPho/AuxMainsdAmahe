@@ -56,7 +56,7 @@ import menu from "@/assets/menu.png";
     box-shadow: rgba(10, 83, 32, 0.1) 0px 10px 10px;
   }
   .link-header {
-    color: black;
+    color: #2F4858;
   }
   .nav-content {
     display: flex;
@@ -73,11 +73,11 @@ import menu from "@/assets/menu.png";
     padding: 0;
   }
   li {
-    color: #262727;
+    color: #2F4858;
     padding: 0 10px;
   }
   li:hover {
-    color: #89b68e;
+    color: #89B68E;
   }
   a {
 
@@ -100,7 +100,7 @@ import menu from "@/assets/menu.png";
   .btn-form a {
     position: relative; 
     z-index: 1;
-    color: black;
+    color: #2F4858;
   }
   .btn-form:after {
     content: "";
@@ -120,7 +120,7 @@ import menu from "@/assets/menu.png";
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
   a:hover {
-    color: black;
+    color: #2F4858;
   }
   .first-part {
     font-weight: bold;

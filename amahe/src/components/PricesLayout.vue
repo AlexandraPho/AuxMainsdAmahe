@@ -24,23 +24,23 @@ export default {
         </div>
         <div class="container-prices">
           <!--Price for 60'-->
-          <div class="price">
+         
             <p>
               60 minutes de massage
             </p>
             <span>
               65 euros
             </span>
-          </div>
+
           <!--Price for 90'-->
-          <div class="price">
+          
             <p>
               90 minutes de massage
             </p>
             <span>
               95 euros
             </span>
-          </div>
+
         </div>
 
         <!--Package-->

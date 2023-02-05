@@ -19,5 +19,5 @@ import FootertLayout from './components/FooterLayout.vue'
 </template>
 
 <style scoped>
-
+   
 </style>
