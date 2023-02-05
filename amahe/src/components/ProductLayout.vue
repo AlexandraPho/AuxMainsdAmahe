@@ -113,7 +113,7 @@ export default {
 .titles-components,
 .massage-title,
 p { 
-  color: #43655A;
+  color: #2f4858;
 }
 .massage-title {
     font-weight: bold;
@@ -139,7 +139,7 @@ p {
     background-color: #f6f6f6;
     padding: 1em;
     margin-bottom: 1.2em;
-    height: 19em;
+    height: 16em;
   }
   .nav {
     display: flex;
