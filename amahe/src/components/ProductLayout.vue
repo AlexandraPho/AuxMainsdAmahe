@@ -24,9 +24,9 @@ export default {
 <template>
   <div id="product">
     <hr>
-    <h1 class="titles-components">
+    <h2 class="titles-components">
       Les massages que je vous propose
-    </h1>
+    </h2>
       <div class="container">
         <section class="massages">
           <!--Massage étoile-->
