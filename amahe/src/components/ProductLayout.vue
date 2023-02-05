@@ -1,3 +1,5 @@
+
+
 <script>
 import star from "@/assets/etoile.png";
 import ayurveda from "@/assets/ayurveda.png";
