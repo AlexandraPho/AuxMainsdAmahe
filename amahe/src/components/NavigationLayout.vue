@@ -8,7 +8,6 @@ import menu from "@/assets/menu.png";
         showMobileMenu: false,
         logo: logo,
         menu: menu,
-      
         };
     },
     methods: {
@@ -20,14 +19,16 @@ import menu from "@/assets/menu.png";
 </script>
 
 <template>
-  <header class="header">
+  <header id="header">
       <div class="logo-container">
           <!--LOGO-->
+          <a href ="#main" class="link-header">
           <img class="logo" v-bind:src="logo">
           <div class="text-container">
               <span class="first-part">Aux mains </span>
               <span class="second-part">d'Amahé</span>
           </div>
+        </a>
           <!--Hamburger icon with click method-->
           <img class="img-burger-menu" v-bind:src="menu" @click="showMenu()"> 
       </div>
@@ -35,7 +36,7 @@ import menu from "@/assets/menu.png";
       <nav class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
         <ul class="nav-items">
           <a href="#aboutMe"><li>À propos de moi</li></a>
-          <a href="#massages"><li>Les massages</li></a>
+          <a href="#product"><li>Les massages</li></a>
           <a href="#prices"><li>Les tarifs</li></a>
           <a href="#contact"><li>Contact</li></a>
         </ul>
@@ -47,11 +48,15 @@ import menu from "@/assets/menu.png";
 
 <style scoped>
 
-.header{
+#header{
     background-color: white;
     width: 100%;
     position: fixed;
+    z-index:1;
     box-shadow: rgba(10, 83, 32, 0.1) 0px 10px 10px;
+  }
+  .link-header {
+    color: #2F4858;
   }
   .nav-content {
     display: flex;
@@ -68,13 +73,14 @@ import menu from "@/assets/menu.png";
     padding: 0;
   }
   li {
-    color: #262727;
+    color: #2F4858;
     padding: 0 10px;
   }
   li:hover {
-    color: #89b68e;
+    color: #89B68E;
   }
   a {
+
     text-decoration: none;
   }
   .btn-form {
@@ -94,7 +100,7 @@ import menu from "@/assets/menu.png";
   .btn-form a {
     position: relative; 
     z-index: 1;
-    color: black;
+    color: #2F4858;
   }
   .btn-form:after {
     content: "";
@@ -114,7 +120,7 @@ import menu from "@/assets/menu.png";
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
   a:hover {
-    color: black;
+    color: #2F4858;
   }
   .first-part {
     font-weight: bold;
@@ -126,7 +132,7 @@ import menu from "@/assets/menu.png";
 
   /*Mobile version - hidden hamburger menu*/
   @media screen and (max-width: 767px) {
-    .header {
+    #header {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
@@ -194,7 +200,7 @@ import menu from "@/assets/menu.png";
   
   /*Tablet version*/
   @media screen and (min-width: 768px) {
-    .header {
+    #header {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
@@ -264,7 +270,7 @@ import menu from "@/assets/menu.png";
   
   /*Desktop version*/
   @media screen and (min-width: 1200px) {
-    .header{
+    #header{
       width: 100%;
       height: 8em;
       display: flex;

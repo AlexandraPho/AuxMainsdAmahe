@@ -1,25 +1,23 @@
 <script setup>
 import NavigationLayout from './components/NavigationLayout.vue'
+import MainLayout from './components/MainLayout.vue'
 import AboutMeLayout from './components/AboutMeLayout.vue'
+import ProductLayout from './components/ProductLayout.vue'
+import PricesLayout from './components/PricesLayout.vue'
+import ContactLayout from './components/ContactLayout.vue'
+import FootertLayout from './components/FooterLayout.vue'
 </script>
 
 <template>
    <NavigationLayout/>
+   <MainLayout/>
    <AboutMeLayout/>
-  <!--<header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>-->
-  
+   <ProductLayout/>
+   <PricesLayout/>
+   <ContactLayout/>
+   <FooterLayout/>
 </template>
 
 <style scoped>
-
+   
 </style>
