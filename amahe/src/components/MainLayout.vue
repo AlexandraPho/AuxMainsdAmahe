@@ -1,11 +1,11 @@
 <script>
-import office from "@/assets/office.jpeg";
+import office2 from "@/assets/office-2.jpg";
 import hand1 from "@/assets/hand1.jpg";
 
 export default {
   data() {
       return {
-        office: office,
+        office2: office2,
         hand1: hand1,
         };
     },
@@ -96,13 +96,42 @@ export default {
     flex-direction: column;
     margin-bottom: 1.5em;
   }
+
   .block-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .office {
+  .hand1 {
+
     margin-top: 8em;
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+    /* display: block; */
+    margin-right: auto;
+    margin-left: auto;
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+  }
+  .first-title {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-40%, 60%);
+  }
+  .first {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  .second {
+    color: white;
+    font-style: italic;
+    font-family: fantasy;
+    margin-left: 1.4em;
+    font-size: 1.5em;
+  }
+  .office {
     max-width: 100%;
   }
   .span-title {
