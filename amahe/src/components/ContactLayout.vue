@@ -1,12 +1,11 @@
 <script>
 export default {
-
 }
 </script>
 
 <template>
   <div id="contact">
-    <section class="">
+    <section class="adress">
       <h1 class="titles-components">
         Contactez-moi pour toutes prestations
       </h1>
@@ -53,6 +52,11 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 2em;
+}
+.adress {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .titles-components {
   color: #2F4858;
