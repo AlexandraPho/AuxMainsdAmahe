@@ -123,7 +123,6 @@ export default {
     font-family: fantasy;
     margin-left: 0.3em;
     font-style: italic;
-    font-size: 1.1em;
   }
   .text {
     text-align: center;

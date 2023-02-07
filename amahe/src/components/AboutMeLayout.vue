@@ -30,6 +30,11 @@ export default {
     display: flex;
     align-items: center;
   }
+
+  #aboutMe .portrait {
+    width: 100%;
+    height: auto;
+  }
   /*Smartphone Size*/
   @media only screen and (max-width: 680px) {
   #aboutMe {
@@ -46,7 +51,7 @@ export default {
     margin: 1.9em 1.5em;
   }
   .portrait {
-    width: 23em;
+   /* width: 23em;*/
     border-radius: 1em;
   }
   .text {

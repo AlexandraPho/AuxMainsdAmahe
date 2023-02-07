@@ -13,7 +13,7 @@ export default {
         <!--Type of massage-->
         <div class="massage-type">
           <h3>Le temps d'un massage</h3>
-          <p>
+          <p class="products">
             Massage étoile<br>
             Ayurvédique<br>
             Suédois<br>
@@ -21,6 +21,7 @@ export default {
             Balinais<br>
             Réflexologie plantaire douce
           </p>
+          <hr>
           <div class="container-prices">
             <!--Price for 60'-->
               <p>
@@ -106,6 +107,7 @@ export default {
 #prices {
   margin-top: 2em;
   background-color: #F8F1E3;
+  border-radius: 1em;
 }
 .titles-components {
   color: #324B4E;
@@ -119,9 +121,15 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
+hr {
+  margin: auto;
+  width: 5em;
+  border-color: #324B4E;
+}
 span {
   font-weight: bold;
   font-size: large;
+  color: #548086;
 }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -135,8 +143,9 @@ span {
 }
 .container-prices {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2em;
 }
 .prices {
   margin: 2em;
@@ -150,6 +159,9 @@ span {
   border-radius: 1.5em;;
   padding: 1.2em;
   margin-bottom: 1.2em;
+}
+.products {
+  margin-bottom: 2em;
 }
 .price {
   width: 9em;
