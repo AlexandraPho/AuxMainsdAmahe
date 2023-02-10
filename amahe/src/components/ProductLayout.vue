@@ -125,7 +125,6 @@ p {
   background-color: #eff8f0;
 }
 
-
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
   .titles-components {
@@ -154,6 +153,5 @@ p {
     width: 4em;
     margin-right: 0.9em;
   }
-  
 }
 </style>

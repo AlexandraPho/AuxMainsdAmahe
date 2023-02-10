@@ -80,6 +80,11 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+.adress {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .titles-components {
   color: #2F4858;
 }

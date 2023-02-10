@@ -88,6 +88,7 @@ export default {
   p {
     color: #548086;
   }
+
   /*Smartphone Size*/
   @media only screen and (max-width: 680px) {
   #main {
