@@ -5,6 +5,7 @@ import swedish from "@/assets/swedish.png";
 import shiatsu from "@/assets/shiatsu.png";
 import bali from "@/assets/balinese.png";
 import reflexo from "@/assets/reflexologie.png";
+
 export default {
   data() {
       return {
@@ -114,22 +115,24 @@ p {
   color: #548086;
 }
 .massage-title {
-    font-weight: bold;
-    color: #2f4858;
-  }
-  p {
-    margin-top: 0.5em;
-  }
-  .massage-type {
-    background-color: #eff8f0;
-  }
+  font-weight: bold;
+  color: #2f4858;
+}
+p {
+  margin-top: 0.5em;
+}
+.massage-type {
+  background-color: #eff8f0;
+}
+
+
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
   .titles-components {
-  text-align: center;
-  margin: 1em;
-  padding-top: 1.5em;
-}
+    text-align: center;
+    margin: 1em;
+    padding-top: 1.5em;
+  }
   .massages {
     margin: 2em;
   }
@@ -138,7 +141,6 @@ p {
     flex-direction: column;
     justify-content: center;
     border-radius: 1.5em;
-    
     padding: 1.5em;
     margin-bottom: 1.2em;
     height: 19em;
