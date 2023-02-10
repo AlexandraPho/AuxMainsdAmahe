@@ -30,7 +30,6 @@ export default {
     display: flex;
     align-items: center;
   }
-
   #aboutMe .portrait {
     width: 100%;
     height: auto;

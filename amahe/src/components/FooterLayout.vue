@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div id="footer">
+  <footer id="footer">
     <section class="">
         <div class="logo-container">
           <!--LOGO-->
@@ -24,7 +24,7 @@ export default {
         </a>
         </div>
     </section>
-  </div>
+  </footer>
 </template>
 
 <style scoped>

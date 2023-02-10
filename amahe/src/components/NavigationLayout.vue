@@ -38,7 +38,7 @@ import menu from "@/assets/menu.png";
           <a href="#aboutMe"><li>À propos de moi</li></a>
           <a href="#product"><li>Les massages</li></a>
           <a href="#prices"><li>Les tarifs</li></a>
-          <a href="#contact"><li>Contact</li></a>
+          <a href="#contactContainer"><li>Contact</li></a>
         </ul>
         <button class="btn-form"><a href="#form" class="button">Prendre rendez-vous</a></button>
       </nav>

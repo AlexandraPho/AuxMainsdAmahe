@@ -24,25 +24,20 @@ export default {
           <hr>
           <div class="container-prices">
             <!--Price for 60'-->
-              <p>
-                60 minutes de massage
-              </p>
-              <span>
-                65 euros
-              </span>
+            <div class="timePrice">
+              <p>60 minutes de massage</p><span>65€</span>
+            </div>
             <!--Price for 90'-->
-              <p>
-                90 minutes de massage
-              </p>
-              <span>
-                95 euros
-              </span>
+            <div class="timePrice">
+              <p>90 minutes de massage</p><span>95€</span>
+            </div>
           </div>
         </div>
         <!--Package-->
-        <div class="package-type">
-          <h3>Les forfaits bien-être *</h3>
-          <!--Discovery package-->
+      <div class="package-type">
+        <h3>Les forfaits bien-être *</h3>
+        <!--Discovery package-->
+        <div class="discovery-package">
           <p>
             Le forfait découverte
           </p>
@@ -51,52 +46,56 @@ export default {
           </p>
           <div>
             <span>
-              165 euros
+              165€&nbsp;
             </span>
             <span class="condition">
-              au lieu de 195 euros
-            </span>
-            <span class="souscription">
+              au lieu de 195€&nbsp;
+            </span><br>
+            <small class="subscription">
               Valable 6 mois à partir de la date de souscription
-            </span>
+            </small>
           </div>
+        </div>
+        <hr>
+        <div class="relax-package">
           <!--Relax package-->
           <p>
-            Le forfait détente
+           Détente
           </p>
           <p>
             5 massages d'une heure
           </p>
           <div>
             <span>
-              275 euros
+              275€&nbsp;
             </span>
             <span class="condition">
-              au lieu de 325 euros
-            </span>
-            <span class="souscription">
+              au lieu de 325€&nbsp;
+            </span><br>
+            <small class="subscription">
               Valable 8 mois à partir de la date de souscription
-            </span>
+            </small>
           </div>
-          <span>
+          <div class="condition-pack">
               <strong>*</strong> À vous de combiner les massages que vous souhaitez
-            </span>
+          </div>
         </div>
+      </div>
 
         <!--Less time-->
         <div class="time-type">
           <h3> Vous avez peu de temps ou 
             bien vous souhaitez privilégier juste une zone.
             Je vous propose un massage adapté à vos besoins.</h3>
-          <span>
-            20 min - 25€
-          </span>
-          <span>
-            30 min - 35€
-          </span>
-          <span>
-            45 min - 45€
-          </span>
+            <div class="lessTime">
+              <p>20 min</p><span>25€</span>
+            </div>
+            <div class="lessTime">
+              <p>30 min</p><span>35€</span>
+            </div>
+            <div class="lessTime">
+              <p>45 min</p><span>45€</span>
+            </div>
         </div>
       </section>
       </div>
@@ -107,12 +106,17 @@ export default {
 #prices {
   margin-top: 2em;
   background-color: #F8F1E3;
-  border-radius: 1em;
+  border-radius: 1.5em;
 }
 .titles-components {
-  color: #324B4E;
+  color: #2f4858;
 }
 h3,
+p,
+.subscription,
+.condition-pack {
+  color: #2f4858;
+}
 p {
   color: #548086;
 }
@@ -133,44 +137,72 @@ span {
 }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-.titles-components {
-  text-align: center;
-  margin: 1em;
-  padding-top: 1.5em;
-}
-.container {
-  height: 70em;
-}
-.container-prices {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 2em;
-}
-.prices {
-  margin: 2em;
-}
-.massage-type,
-.package-type,
-.time-type {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 1.5em;;
-  padding: 1.2em;
-  margin-bottom: 1.2em;
-}
-.products {
-  margin-bottom: 2em;
-}
-.price {
-  width: 9em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.7em;
-  margin-bottom: 1.2em;
-  padding: 1.5em;
-}
+  .titles-components {
+    text-align: center;
+    margin: 1em;
+    padding-top: 1.5em;
+  }
+  .container {
+    padding-bottom: 2em;
+  }
+  .container-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .prices {
+    margin: 2em;
+  }
+  .massage-type,
+  .package-type,
+  .time-type {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5em;;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  .package-type p {
+    font-size: large;
+  }
+  .discovery-package,
+  .products {
+    margin-bottom: 2em;
+  }
+  .relax-package,
+  .container-prices {
+    margin-top: 2em;
+  }
+  .price {
+    width: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.7em;
+    margin-bottom: 1.2em;
+    padding: 1.5em;
+  }
+  .condition {
+    font-weight: normal;
+  }
+  .subscription {
+    font-style: italic;
+    font-weight: normal;
+    font-size: small;
+  }
+  .condition-pack {
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  .lessTime,
+  .timePrice {
+    display: flex;
+    align-items: center;
+  }
+  .lessTime p,
+  .timePrice p {
+    margin-right: 1em;
+  }
 }
 </style>
