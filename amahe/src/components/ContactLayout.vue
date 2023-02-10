@@ -80,6 +80,11 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+.adress {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .titles-components {
   color: #2F4858;
 }
@@ -103,11 +108,6 @@ a,
 tr {
   color: #548086;
 }
-tr {
-
-}
-
-
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -128,9 +128,6 @@ tr {
   }
   .icon {
     width: 4em;
-  }
-  th {
-    
   }
 }
 
