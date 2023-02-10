@@ -103,11 +103,6 @@ a,
 tr {
   color: #548086;
 }
-tr {
-
-}
-
-
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -129,9 +124,5 @@ tr {
   .icon {
     width: 4em;
   }
-  th {
-    
-  }
 }
-
 </style>
