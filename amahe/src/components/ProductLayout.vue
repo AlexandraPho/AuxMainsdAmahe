@@ -28,7 +28,7 @@ export default {
         <section class="massages">
           <!--Massage étoile-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="star">
               <h3 class="massage-title">
                 Massage étoile
@@ -40,7 +40,7 @@ export default {
           </div>
           <!--Massage ayurvédique-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="ayurveda">
               <h3 class="massage-title">
                 Ayurvédique
@@ -52,7 +52,7 @@ export default {
           </div>
           <!--Massage suedois-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="swedish">
               <h3 class="massage-title">
                 Suédois
@@ -64,7 +64,7 @@ export default {
           </div>
           <!--Massage shiatsu-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="shiatsu">
               <h3 class="massage-title">
                 Shiatsu
@@ -76,7 +76,7 @@ export default {
           </div>
           <!--Massage balinais-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="bali">
               <h3 class="massage-title">
                 Balinais
@@ -88,7 +88,7 @@ export default {
           </div>
           <!--Massage réflexologie-->
           <div class="massage-type">
-            <div class="nav">
+            <div class="title">
               <img class="icon" v-bind:src="reflexo">
               <h3 class="massage-title">
                 Réflexologie plantaire douce
@@ -108,17 +108,20 @@ export default {
   margin-top: 2em;
 }
 .titles-components {
-  color: #324B4E;
+  color: #2f4858;
 }
-.massage-title,
 p { 
   color: #548086;
 }
 .massage-title {
     font-weight: bold;
+    color: #2f4858;
   }
   p {
     margin-top: 0.5em;
+  }
+  .massage-type {
+    background-color: #eff8f0;
   }
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -135,18 +138,18 @@ p {
     flex-direction: column;
     justify-content: center;
     border-radius: 1.5em;
-    background-color: #eff8f0;
+    
     padding: 1.5em;
     margin-bottom: 1.2em;
     height: 19em;
   }
-  .nav {
+  .title {
     display: flex;
     align-items: center;
     margin-bottom: 0.5em;
   }
   .icon {
-    width: 3em;
+    width: 4em;
     margin-right: 0.9em;
   }
   

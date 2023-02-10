@@ -60,7 +60,7 @@ export default {
         <div class="relax-package">
           <!--Relax package-->
           <p>
-            Le forfait détente
+           Détente
           </p>
           <p>
             5 massages d'une heure
@@ -109,12 +109,15 @@ export default {
   border-radius: 1.5em;
 }
 .titles-components {
-  color: #324B4E;
+  color: #2f4858;
 }
 h3,
 p,
 .subscription,
 .condition-pack {
+  color: #2f4858;
+}
+p {
   color: #548086;
 }
 h3 {
@@ -140,7 +143,7 @@ span {
     padding-top: 1.5em;
   }
   .container {
-    height: 75em;
+    padding-bottom: 2em;
   }
   .container-prices {
     display: flex;
