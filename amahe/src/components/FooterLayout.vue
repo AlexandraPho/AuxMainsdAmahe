@@ -22,17 +22,24 @@ export default {
           <a href ="#main" class="link-header">
           <img class="logo" v-bind:src="logo">
           <div class="text-container">
-              <span class="first-part">Aux mains </span>
-              <span class="second-part">d'Amahé</span>
+              <span class="title-footer">Aux mains d'Amahé</span>
+
           </div>
           </a>
         </div>
         <div class="social-media">
-          <img class="fb-icon" v-bind:src="fb">
-          <img class="inst-icon" v-bind:src="inst">
+          <a class="icon" href="https://www.facebook.com/auxmainsdamahe" target="_blank"><img class="fb-icon" alt="facebook-logo" v-bind:src="fb"></a>
+          <a class="icon" href="https://www.instagram.com/aux_mains_damahe/" target="_blank"><img class="inst-icon" alt="instagram-logo" v-bind:src="inst"></a>
         </div>
         <div class="condition">
-
+          <a href="#" class="condition-footer">Code Déontologique</a>
+          <p class="condition-footer">|</p>
+          <a href="#" class="condition-footer">CGV</a>
+        </div>
+        <div class="createBy">
+          <p>
+            Copyright All Right Reserved 2023 - Alexandra Pinheiro
+          </p>
         </div>
     </section>
   </footer>
@@ -40,7 +47,7 @@ export default {
 
 <style scoped>
 #footer {
-  height: 15em;
+  height: 18em;
   display: flex;
   justify-content: center;
   background-color: #FFFAF1;
@@ -53,18 +60,38 @@ a {
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
   .footer-container {
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .link-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .social-media {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 1.2em;
   }
   .logo {
-    width: 10em;
+    width: 8em;
+  }
+  .title-footer {
+    font-weight: 500;
   }
   .fb-icon {
     width: 1.9em;
+  }
+  .condition {
+    display: flex;
+    justify-content: center;
+  }
+  .condition-footer {
+    margin: 0.5em;
+  }
+  .createBy {
+    font-size: x-small;
   }
 }
 </style>

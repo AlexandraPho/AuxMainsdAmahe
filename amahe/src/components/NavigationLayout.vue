@@ -137,15 +137,15 @@ import menu from "@/assets/menu.png";
       flex-direction: column;
     }
     .logo-container {
-      padding: 1.5em;
+      padding: 1.2em;
       display: flex;
       position: relative;
       justify-content: space-between;
       align-items: center;
     }
     .logo {
-      width: 10em;
-      filter: blur(0.7px);
+      width: 9em;
+      filter: blur(0.5px);
     }
     .first-part,
     .second-part {
