@@ -109,7 +109,7 @@ export default {
   }
   .first-title {
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 45%;
     transform: translate(-40%, 60%);
   }

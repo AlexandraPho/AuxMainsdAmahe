@@ -5,7 +5,8 @@ import AboutMeLayout from './components/AboutMeLayout.vue'
 import ProductLayout from './components/ProductLayout.vue'
 import PricesLayout from './components/PricesLayout.vue'
 import ContactLayout from './components/ContactLayout.vue'
-import FootertLayout from './components/FooterLayout.vue'
+import FooterLayout from './components/FooterLayout.vue'
+
 </script>
 
 <template>
