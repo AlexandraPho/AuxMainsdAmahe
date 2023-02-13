@@ -49,7 +49,7 @@ export default {
     cursor: pointer;
     outline: none;
     overflow: hidden;
-    position: relative;
+    position: sticky;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
     background-color: #eff8f0;
