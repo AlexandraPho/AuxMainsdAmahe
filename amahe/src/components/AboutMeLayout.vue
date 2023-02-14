@@ -1,6 +1,6 @@
 <script>
 import portrait from "@/assets/portrait.png";
-import Carousel from "../components/Carousel.vue";
+import Carousel from "../components/carousel/Carousel.vue";
 
 export default {
   components : {
@@ -15,10 +15,14 @@ export default {
           "src/assets/hand2.jpg",
           "src/assets/hand5.jpg",
           "src/assets/amahe2.jpg",
-        ]
-      };
-
+        ],
+        
+      }
     },
+    
+  components : {
+    Carousel,
+  },
 }
 </script>
 
@@ -34,8 +38,7 @@ export default {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu massa a turpis commodo fermentum. Ut euismod leo et lacinia mattis. Integer quis risus quam. Donec dui libero, sollicitudin ultricies mattis eu, tincidunt bibendum sapien. Sed iaculis, ex quis pellentesque luctus, massa dolor ultricies mauris, a feugiat est quam at nisi. In mollis, mi eu tincidunt cursus, ligula massa rhoncus odio, sed auctor velit tortor at quam.
           </p>
         </div>
-        <carousel :slides="slides"></carousel>
-        
+        <carousel :slides="slides" :interval="4000" controls indicators></carousel>
       </section>
   </div>
 </template>
@@ -63,7 +66,11 @@ export default {
   .block-container {
     text-align: start;
     margin: 1.9em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
   .portrait {
    /* width: 23em;*/
     border-radius: 1em;
@@ -76,5 +83,6 @@ export default {
     font-weight: 600;
     margin-bottom: 0.8em;
   }
+  
 }
 </style>
