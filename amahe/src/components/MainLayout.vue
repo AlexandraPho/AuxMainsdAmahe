@@ -25,7 +25,7 @@ export default {
             À l'écoute de votre corps
           </h3>-->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu massa a turpis commodo fermentum. 
+            Si vous êtes à la recherche d'un moment de détente, de mieux-être, ou si vous voulez simplement prendre soin de vous, je serais ravie de vous rencontrer et de vous aider à atteindre votre bien-être optimal.          
           </p>
         </div>
         <button class="btn-form"><a href="#product" class="button">Les massages</a></button>
@@ -49,7 +49,7 @@ export default {
     cursor: pointer;
     outline: none;
     overflow: hidden;
-    position: relative;
+    position: sticky;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
     background-color: #eff8f0;
@@ -90,7 +90,60 @@ export default {
   }
 
   /*Smartphone Size*/
-  @media only screen and (max-width: 680px) {
+  /* Extra small devices (phones, 439px and down) */
+  @media only screen and (max-width: 439px) {
+  #main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.4em;
+  }
+  .hand1 {
+    margin-top: 8em;
+    max-width: 100%;
+  }
+  .first-title {
+    position: absolute;
+    top: 21%;
+    left: 45%;
+    transform: translate(-40%, 55%);
+  }
+  .first-span-title,
+  .second-span-title {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3em;
+  }
+  .second-span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 440px and up) */
+
+  @media (min-width: 440px){
   #main {
     display: flex;
     align-items: center;
@@ -104,20 +157,177 @@ export default {
     margin: 1.5em;
   }
   .hand1 {
-    margin-top: 9em;
+    margin-top: 8em;
     max-width: 100%;
   }
   .first-title {
     position: absolute;
-    top: 18%;
+    top: 21%;
     left: 45%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+  .second-span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+  }
+  .hand1 {
+    margin-top: 8em;
+    max-width: 100%;
+  }
+  .first-title {
+    width: 12em;
+    position: absolute;
+    top: 21%;
+    left: 45%;
+    transform: translate(-40%, 60%);
+  }
+  .first-span-title,
+  .second-span-title {
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+  }
+  .second-span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  p,
+  .btn-form {
+    font-size: 1.7em;
+  }
+  .btn-form {
+        margin-top: 1.2em;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+  }
+  .hand1 {
+    margin-top: 8em;
+    max-width: 100%;
+  }
+  .first-title {
+    width: 12em;
+    position: absolute;
+    top: 21%;
+    left: 45%;
+    transform: translate(-40%, 60%);
+  }
+  .first-span-title,
+  .second-span-title {
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+  }
+  .second-span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
+    font-family: fantasy;
+    margin-left: 0.3em;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+  }
+  .hand1 {
+    margin-top: 8em;
+    max-width: 100%;
+  }
+  .first-title {
+    width: 20em;
+    position: absolute;
+    top: 21%;
+    left: 45%;
+    transform: translate(-40%, 60%);
+  }
+  .first-span-title,
+  .second-span-title {
+    color: white;
+    font-weight: 500;
+    font-size: 4em;
   }
   .second-span-title {
     font-family: fantasy;
