@@ -32,10 +32,14 @@ export default {
       <section class="block-container">
         <div class="text">
           <h2 class="titles">
-            À propose de moi
+            Bienvenue à tous!
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu massa a turpis commodo fermentum. Ut euismod leo et lacinia mattis. Integer quis risus quam. Donec dui libero, sollicitudin ultricies mattis eu, tincidunt bibendum sapien. Sed iaculis, ex quis pellentesque luctus, massa dolor ultricies mauris, a feugiat est quam at nisi. In mollis, mi eu tincidunt cursus, ligula massa rhoncus odio, sed auctor velit tortor at quam.
+            Je suis heureuse de vous présenter mon métier de masseuse, où je fais en sorte que chaque massage soit un moment de détente et de bien-être, sans compterque c'est avant tout une passion pour moi.
+            En tant que masseuse, j'ai la chance d'avoir un lien privilégié avec mes clients et de pouvoir les aider à atteindre un bien-être grâce à mon toucher. Je suis une personne à l’écoute et hypersensible, et ces qualités se reflètent dans mon approche personnalisée et bienveillante du massage. 
+            Je suis toujours en train de me former pour vous offrir une expérience unique et sur mesure. Mon objectif est de vous offrir un moment de détente, de soulager votre stress et votre anxiété, et de vous aider à vous sentir en paix, apaisé et revitalisé.
+            Je suis convaincue que le massage peut avoir un impact profond sur le corps et l'esprit, et c'est pour cette raison que je m'efforce d'apporter une touche de douceur et de bonté à chaque massage. Je veux que mes clients se sentent entendus et pris en charge, et je m'engage à être à l'écoute de leurs besoins et de leurs souhaits.
+            Mon objectif est que vous vous sentiez apaisés, revitalisés et en paix lorsque vous quittez ma table de massage.
           </p>
         </div>
         <carousel :slides="slides" :interval="4000" controls indicators></carousel>
