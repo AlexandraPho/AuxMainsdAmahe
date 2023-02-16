@@ -47,32 +47,42 @@ export default {
 
 <style scoped>
 #footer {
-  height: 18em;
   display: flex;
   justify-content: center;
   background-color: #FFFAF1;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.link-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.2em;
+}
+.condition {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
 }
 a {
   text-decoration: none;
   color: #2F4858;
 }
+p {
+  color: #548086;
+}
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .link-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .social-media {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1.2em;
+  #footer {
+    height: 18em;
   }
   .logo {
     width: 8em;
@@ -83,15 +93,91 @@ a {
   .fb-icon {
     width: 1.9em;
   }
-  .condition {
-    display: flex;
-    justify-content: center;
-  }
   .condition-footer {
     margin: 0.5em;
   }
   .createBy {
     font-size: x-small;
+  }
+}
+
+/* Medium devices (landscape tablets, 681px and up) */
+@media only screen and (min-width: 681px) {
+  #footer {
+    height: 25em;
+  }
+  .logo {
+    width: 15em;
+  }
+  .title-footer {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .fb-icon,
+  .inst-icon {
+    width: 3em;
+  }
+  .condition-footer {
+    margin: 0.5em;
+    font-size: large;
+  }
+  .createBy {
+    font-size: normal;
+    margin-bottom: 1em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #footer {
+    height: 25em;
+  }
+  .logo {
+    width: 15em;
+  }
+  .title-footer {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .fb-icon,
+  .inst-icon {
+    width: 3em;
+  }
+  .condition-footer {
+    margin: 0.5em;
+    font-size: large;
+  }
+  .createBy {
+    font-size: normal;
+    margin-bottom: 1em;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #footer {
+    height: 25em;
+  }
+  .logo {
+    width: 15em;
+  }
+  .title-footer {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .fb-icon,
+  .inst-icon {
+    width: 3em;
+    margin: 1em;
+  }
+  .condition {
+    display: flex;
+    justify-content: center;
+  }
+  .createBy {
+    font-size: normal;
+    margin-bottom: 1em;
   }
 }
 </style>
