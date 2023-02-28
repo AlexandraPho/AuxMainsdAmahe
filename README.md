@@ -3,4 +3,4 @@ This repository show a website for massage.
 <img src="logo.jpg">
 <hr>
 
-<img src="logo.jpg">
+<img src="amahe.png">
