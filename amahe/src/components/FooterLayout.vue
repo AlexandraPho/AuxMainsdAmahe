@@ -22,8 +22,8 @@ export default {
           <a href ="#main" class="link-header">
           <img class="logo" v-bind:src="logo">
           <div class="text-container">
-              <span class="title-footer">Aux mains d'Amahé</span>
-
+            <span class="title-footer">Aux mains d'</span>
+            <span class="second-title-footer">Amahé</span>
           </div>
           </a>
         </div>
@@ -78,6 +78,10 @@ a {
 p {
   color: #548086;
 }
+.second-title-footer {
+  font-family: 'baskerville';
+  font-style: italic;
+}
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -89,6 +93,9 @@ p {
   }
   .title-footer {
     font-weight: 500;
+  }
+  .second-title-footer {
+  font-size: 1.2em;
   }
   .fb-icon {
     width: 1.9em;
@@ -113,7 +120,10 @@ p {
     font-weight: 500;
     font-size: x-large;
   }
-  .fb-icon,
+
+  .fb-i.second-title-footer {
+  font-size: 1.2em;
+  }con,
   .inst-icon {
     width: 3em;
   }
@@ -127,8 +137,8 @@ p {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   #footer {
     height: 25em;
   }
@@ -138,6 +148,9 @@ p {
   .title-footer {
     font-weight: 500;
     font-size: x-large;
+  }
+  .second-title-footer {
+  font-size: 1.8em;
   }
   .fb-icon,
   .inst-icon {

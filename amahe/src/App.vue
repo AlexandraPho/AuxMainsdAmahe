@@ -20,5 +20,6 @@ import FooterLayout from './components/FooterLayout.vue'
 </template>
 
 <style scoped>
+
    
 </style>

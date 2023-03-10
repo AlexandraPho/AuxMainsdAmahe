@@ -35,11 +35,7 @@ export default {
             Bienvenue à tous!
           </h2>
           <p>
-            Je suis heureuse de vous présenter mon métier de masseuse, où je fais en sorte que chaque massage soit un moment de détente et de bien-être, sans compterque c'est avant tout une passion pour moi.
-            En tant que masseuse, j'ai la chance d'avoir un lien privilégié avec mes clients et de pouvoir les aider à atteindre un bien-être grâce à mon toucher. Je suis une personne à l’écoute et hypersensible, et ces qualités se reflètent dans mon approche personnalisée et bienveillante du massage. 
-            Je suis toujours en train de me former pour vous offrir une expérience unique et sur mesure. Mon objectif est de vous offrir un moment de détente, de soulager votre stress et votre anxiété, et de vous aider à vous sentir en paix, apaisé et revitalisé.
-            Je suis convaincue que le massage peut avoir un impact profond sur le corps et l'esprit, et c'est pour cette raison que je m'efforce d'apporter une touche de douceur et de bonté à chaque massage. Je veux que mes clients se sentent entendus et pris en charge, et je m'engage à être à l'écoute de leurs besoins et de leurs souhaits.
-            Mon objectif est que vous vous sentiez apaisés, revitalisés et en paix lorsque vous quittez ma table de massage.
+            Je suis une masseuse expérimentée et attentionnée, dédiée à fournir des massages personnalisés pour aider mes clients à se détendre et à atteindre un état de bien-être. Je suis passionnée par mon métier et je m'efforce de m'améliorer constamment pour offrir une expérience de massage unique et sur mesure. Mon objectif est que mes clients se sentent apaisés, revitalisés et en paix après leur massage.
           </p>
         </div>
         <carousel :slides="slides" :interval="4000" controls indicators></carousel>
@@ -52,20 +48,22 @@ export default {
     display: flex;
     align-items: center;
   }
-  #aboutMe .portrait {
-    width: 100%;
-    height: auto;
+  .titles {
+    color: #2f4858;
+    font-family: 'Baskerville';
+    font-style: italic;
   }
   /*Smartphone Size*/
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 767px) {
   #aboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10em;
-    background-color: #F8F1E3;
+    background-color: #FFFAF1;
     margin: 1.6em;
     border-radius: 1em;
+    padding: 2em;
   }
   .block-container {
     text-align: start;
@@ -73,8 +71,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
-  
+  #aboutMe .portrait {
+    width: 100%;
+    height: auto;
+  }
   .portrait {
    /* width: 23em;*/
     border-radius: 1em;
@@ -83,10 +85,125 @@ export default {
     color: #548086;
   }
   .titles {
-    font-size: x-large;
-    font-weight: 600;
+    font-size: 2em;
     margin-bottom: 0.8em;
   }
-  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+    background-color: #FFFAF1;
+    margin: 2.5em;
+    padding: 3em;
+    border-radius: 1em;
+  }
+  .block-container {
+    text-align: start;
+    margin: 1.9em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em;
+  }
+  #aboutMe .portrait {
+    width: 35em;
+    height: auto;
+  }
+  .portrait {
+    border-radius: 1em;
+  }
+  .text {
+    color: #548086;
+  }
+  .titles {
+    font-size: 2.8em;
+    margin-bottom: 0.8em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Large devices (large laptops and desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #aboutMe {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAF1;
+    border-radius: 1.5em;
+    padding: 2.5em;
+
+  }
+  #aboutMe .portrait {
+    display: flex;
+    width: 35em;
+    margin: 1em;
+    border-radius: 1.5em;
+    height: auto;
+  }
+  .block-container {
+    padding: 2em;
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles {
+    margin-bottom: 0.5em;
+  }
+  .text {
+    width: 80%;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #aboutMe {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #FFFAF1;
+    border-radius: 1.5em;
+    padding: 2.5em;
+
+  }
+  #aboutMe .portrait {
+    display: flex;
+    width: 30em;
+    margin: 1em;
+    border-radius: 1.5em;
+    height: auto;
+  }
+  .block-container {
+    padding: 2em;
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .titles {
+    margin-bottom: 0.5em;
+  }
+  .text {
+    width: 80%;
+    text-align: start;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
 }
 </style>

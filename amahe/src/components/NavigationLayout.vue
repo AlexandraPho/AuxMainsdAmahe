@@ -38,9 +38,8 @@ import menu from "@/assets/menu.png";
           <a href="#aboutMe"><li>À propos de moi</li></a>
           <a href="#product"><li>Les massages</li></a>
           <a href="#prices"><li>Les tarifs</li></a>
-          <a href="#contactContainer"><li>Contact</li></a>
         </ul>
-        <button class="btn-form"><a href="#form" class="button">Prendre rendez-vous</a></button>
+        <button class="btn-form"><a href="#contactContainer" class="button">Prendre rendez-vous</a></button>
       </nav>
   </header>
 </template>
@@ -121,12 +120,18 @@ import menu from "@/assets/menu.png";
   a:hover {
     color: #2F4858;
   }
+  .logo {
+      filter: blur(0.4px);
+      transform: rotate(-15deg);
+  }
   .first-part {
-    font-weight: bold;
+    font-weight: 600;
   }
   .second-part {
+    font-family: 'baskerville';
     font-style: italic;
-    margin-left: 0.9em;
+    margin-left: 1.4em;
+    font-size: 1.4em;
   }
 
   /*Mobile version - hidden hamburger menu*/
@@ -144,19 +149,20 @@ import menu from "@/assets/menu.png";
       align-items: center;
     }
     .logo {
-      width: 9em;
-      filter: blur(0.5px);
+      width: 7em;
+      margin-left: 3em;
     }
-    .first-part,
+    .first-part{
+      font-size: 1.3;
+    }
     .second-part {
-      font-size: large;
-      text-shadow: 10px 10px 30px #4f6a41;
+      font-size: 1.2em;
     }
     .text-container {
       display: flex;
       flex-direction: column;
       position: absolute;
-      bottom: 2.5em;
+      bottom: 2em;
     }
     .img-burger-menu {
       width: 3em;
@@ -212,13 +218,14 @@ import menu from "@/assets/menu.png";
       align-items: center;
     }
     .logo {
-      width: 13em;
-      filter: blur(0.7px);
+      width: 10em;
+      margin-left: 4.8em;
     }
-    .first-part,
+    .first-part{
+      font-size: 1.5em;
+    }
     .second-part {
-      font-size: x-large;
-      text-shadow: 10px 10px 30px #4f6a41;
+      font-size: 1.8em;
     }
     .text-container {
       display: flex;
@@ -241,7 +248,7 @@ import menu from "@/assets/menu.png";
     }
     .open-menu {
       opacity: 1;
-      height: 290px;
+      height: 300px;
     }
     .closed-menu {
       opacity: 0;
@@ -252,13 +259,14 @@ import menu from "@/assets/menu.png";
       flex-direction: column;
       display: flex;
       align-items: center;
+      font-size: larger;
     }
     li {
       margin: 10px;
       font-size: larger;
     }
     .btn-form {
-      margin-bottom: 1em;
+      margin-bottom: 0.8em;
       font-size: larger;
     }
     .btn-form:after {
@@ -298,7 +306,7 @@ import menu from "@/assets/menu.png";
     }
     li {
       margin: 10px;
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
     .btn-form {
       margin-right: 1.2em;

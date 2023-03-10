@@ -39,7 +39,7 @@ export default {
         <!--Discovery package-->
         <div class="discovery-package">
           <p>
-            Le forfait découverte
+            Le forfait <span class="span">Découverte</span>
           </p>
           <p>
             3 massages d'une heure
@@ -60,7 +60,7 @@ export default {
         <div class="relax-package">
           <!--Relax package-->
           <p>
-           Détente
+            Le forfait <span class="span">Détente</span>
           </p>
           <p>
             5 massages d'une heure
@@ -84,9 +84,7 @@ export default {
 
         <!--Less time-->
         <div class="time-type">
-          <h3> Vous avez peu de temps ou 
-            bien vous souhaitez privilégier juste une zone.
-            Je vous propose un massage adapté à vos besoins.</h3>
+          <h3> Quelques minutes pour soi</h3>
             <div class="lessTime">
               <p>20 min</p><span>25€</span>
             </div>
@@ -94,7 +92,7 @@ export default {
               <p>30 min</p><span>35€</span>
             </div>
             <div class="lessTime">
-              <p>45 min</p><span>45€</span>
+              <p>45 min</p><span>50€</span>
             </div>
         </div>
       </section>
@@ -105,11 +103,13 @@ export default {
 <style scoped>
 #prices {
   margin-top: 2em;
-  background-color: #F8F1E3;
+  background-color: #FFFAF1;
   border-radius: 1.5em;
 }
 .titles-components {
   color: #2f4858;
+  font-family: 'Baskerville';
+  font-style: italic;
 }
 h3,
 p,
@@ -135,11 +135,23 @@ span {
   font-size: large;
   color: #548086;
 }
+.span {
+  font-style: italic;
+  font-size: inherit;
+}
+.condition-pack {
+  margin-top: 2em;
+}
+
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
+  #prices {
+    margin: 1.6em;
+  }
   .titles-components {
+    font-size: 2em;
     text-align: center;
-    margin: 1em;
+    margin: 0.6em;
     padding-top: 1.5em;
   }
   .container {
@@ -165,6 +177,87 @@ span {
   }
   .package-type p {
     font-size: large;
+  }
+  .discovery-package,
+  .products {
+    margin-bottom: 2em;
+  }
+  .relax-package,
+  .container-prices {
+    margin-top: 2em;
+  }
+  .price {
+    width: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.7em;
+    margin-bottom: 1.2em;
+    padding: 1.5em;
+  }
+  .condition {
+    font-weight: normal;
+  }
+  .subscription {
+    font-style: italic;
+    font-weight: normal;
+    font-size: small;
+  }
+  .condition-pack {
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  .lessTime,
+  .timePrice {
+    display: flex;
+    align-items: center;
+  }
+  .lessTime p,
+  .timePrice p {
+    margin-right: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #prices {
+    margin: 2.5em;
+  }
+  .titles-components {
+    text-align: center;
+    margin: 1em;
+    padding-top: 1.5em;
+    font-size: 2.8em;
+  }
+  .container {
+    padding-bottom: 2em;
+  }
+  .container-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .prices {
+    margin: 2em;
+  }
+  .massage-type,
+  .package-type,
+  .time-type {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5em;;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .package-type p {
+    font-size: 1.2em;
   }
   .discovery-package,
   .products {

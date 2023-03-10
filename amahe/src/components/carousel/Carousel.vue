@@ -120,10 +120,61 @@ export default {
 }
 .carousel-inner {
   position: relative;
-  width: 300px;
-  height: 225px;
   overflow: hidden;
   border-radius: 1em;
   margin-top: 2.5em;
+}
+
+/* little devices (landscape little smatphone, 360px and down) */
+@media only screen and (max-width: 360px) {
+ .carousel-inner {
+   width: 220px;
+   height: 225px;
+ }
+ img {
+   width: 450px;
+ }
+}
+
+/* smatphone devices (landscape  smatphone, 361px and up) */
+@media only screen and (min-width: 361px) {
+ .carousel-inner {
+   width: 280px;
+   height: 225px;
+ }
+ img {
+   width: 450px;
+ }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .carousel-inner {
+   width: 220px;
+   height: 225px;
+ }
+ img {
+   width: 450px;
+ }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .carousel-inner {
+    width: 450px;
+    height: 325px;
+  }
+  img {
+    width: 450px;
+  }
+}
+
+/* Medium devices (landscape tablets, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+ .carousel-inner {
+   width: 400px;
+   height: 285px;
+ }
 }
 </style>

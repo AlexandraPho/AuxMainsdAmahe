@@ -54,4 +54,20 @@ img {
 .slide-out-leave-to {
   transform: translateX(-100%);
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  img {
+    width: 450px;
+  }
+}
+
+/* Medium devices (landscape tablets, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  img {
+    width: 400px;
+  }
+}
+
+
 </style>
