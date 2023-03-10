@@ -178,7 +178,16 @@ p {
   }
   .title {
     display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+  .icon {
+    width: 3em;
     margin-right: 0.9em;
+  }
+  p {
+    font-size: 1em;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
