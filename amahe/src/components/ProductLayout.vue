@@ -1,18 +1,19 @@
 <script>
-import contact from "@/assets/phoneMail.png";
-import adress from "@/assets/adress.png";
-import calendar from "@/assets/calendar.png";
-import phone from "@/assets/phone.png";
-import mail from "@/assets/mail.png";
-
+import star from "@/assets/etoile.png";
+import ayurveda from "@/assets/ayurveda.png";
+import swedish from "@/assets/swedish.png";
+import shiatsu from "@/assets/shiatsu.png";
+import bali from "@/assets/balinese.png";
+import reflexo from "@/assets/reflexologie.png";
 export default {
   data() {
       return {
-        contact: contact,
-        phone: phone,
-        mail: mail,
-        adress: adress,
-        calendar: calendar
+        star: star,
+        ayurveda: ayurveda,
+        swedish: swedish,
+        shiatsu: shiatsu,
+        bali: bali,
+        reflexo: reflexo,
         };
     },
 }
@@ -285,7 +286,7 @@ p {
     border-radius: 1.5em;
     padding: 1.5em;
     margin: 1em;
-    height: 16em;
+    height: 15em;
     width: 35em;
   }
   .title {
@@ -326,7 +327,7 @@ hr {
   border-radius: 1.5em;
   padding: 1.5em;
   margin: 1em;
-  height: 19em;
+  height: 17em;
   width: 50em;
 }
 .title {
