@@ -1,10 +1,9 @@
 <script>
-import office2 from "@/assets/office-2.jpg";
 import hand1 from "@/assets/hand1.jpg";
+
 export default {
   data() {
       return {
-        office2: office2,
         hand1: hand1,
         };
     },
@@ -13,7 +12,6 @@ export default {
 
 <template>
   <div id="main">
-    <!--<img class="office" v-bind:src="office">-->
     <img class="hand1" v-bind:src="hand1">
       <section class="block-container">
         <div class="text">
@@ -41,6 +39,17 @@ export default {
   .hand1 {
     max-width: 100%;
     margin-top: 9em;
+    filter: brightness(0.6);
+  }
+
+  .first-span-title {
+    font-weight: bold;
+  }
+  .second-span-title {
+    font-family: 'Baskerville';
+    margin-left: 0.3em;
+    font-style: italic;
+    font-weight: 500;
   }
   .btn-form {
     border: none;
@@ -104,26 +113,23 @@ export default {
     align-items: center;
     margin: 1.4em;
   }
+  .office {
+    display: none;
+  }
   .hand1 {
-    margin-top: 8em;
+    margin-top: 6em;
     max-width: 100%;
   }
   .first-title {
     position: absolute;
-    top: 21%;
+    top: 17.5%;
     left: 45%;
     transform: translate(-40%, 55%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 500;
     font-size: 1.3em;
-  }
-  .second-span-title {
-    font-family: fantasy;
-    margin-left: 0.3em;
-    font-style: italic;
   }
   .text {
     text-align: center;
@@ -142,7 +148,6 @@ export default {
 }
 
 /* Small devices (portrait tablets and large phones, 440px and up) */
-
   @media (min-width: 440px){
   #main {
     display: flex;
@@ -156,26 +161,71 @@ export default {
     align-items: center;
     margin: 1.5em;
   }
+  .office {
+    display: none;
+  }
   .hand1 {
-    margin-top: 8em;
+    margin-top: 7em;
     max-width: 100%;
   }
   .first-title {
     position: absolute;
-    top: 21%;
+    top: 18%;
     left: 45%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 500;
     font-size: 1.8em;
   }
-  .second-span-title {
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+  .span-title {
     font-family: fantasy;
     margin-left: 0.3em;
     font-style: italic;
+    font-size: 1.1em;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1.8em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 520px and up) */
+@media (min-width: 520px){
+  #main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  .block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+  }
+  .office {
+    display: none;
+  }
+  .hand1 {
+    margin-top: 7em;
+    max-width: 100%;
+  }
+  .first-title {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translate(-40%, 60%);
+  }
+  .first-span-title,
+  .second-span-title {
+    color: white;
+    font-size: 2em;
   }
   .text {
     text-align: center;
@@ -199,7 +249,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
   .block-container {
     display: flex;
@@ -207,27 +257,23 @@ export default {
     align-items: center;
     margin: 1.5em;
   }
+  .office {
+    display: none;
+  }
   .hand1 {
     margin-top: 8em;
     max-width: 100%;
   }
   .first-title {
-    width: 12em;
     position: absolute;
-    top: 21%;
+    top: 24%;
     left: 45%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 500;
     font-size: 2.5em;
-  }
-  .second-span-title {
-    font-family: fantasy;
-    margin-left: 0.3em;
-    font-style: italic;
   }
   .text {
     text-align: center;
@@ -241,19 +287,21 @@ export default {
   }
   p,
   .btn-form {
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
   .btn-form {
     margin-top: 1.2em;
   }
 }
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
   .block-container {
     display: flex;
@@ -261,27 +309,24 @@ export default {
     align-items: center;
     margin: 1.5em;
   }
+  .office {
+    display: none;
+  }
   .hand1 {
     margin-top: 8em;
     max-width: 100%;
   }
   .first-title {
-    width: 12em;
+    width: 15em;
     position: absolute;
-    top: 21%;
+    top: 28%;
     left: 45%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 500;
     font-size: 2.5em;
-  }
-  .second-span-title {
-    font-family: fantasy;
-    margin-left: 0.3em;
-    font-style: italic;
   }
   .text {
     text-align: center;
@@ -304,7 +349,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
   .block-container {
     display: flex;
@@ -312,27 +357,24 @@ export default {
     align-items: center;
     margin: 1.5em;
   }
+  .office {
+    display: none;
+  }
   .hand1 {
     margin-top: 8em;
     max-width: 100%;
   }
   .first-title {
-    width: 20em;
+    width: 16em;
     position: absolute;
-    top: 21%;
+    top: 30%;
     left: 45%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
     color: white;
-    font-weight: 500;
-    font-size: 4em;
-  }
-  .second-span-title {
-    font-family: fantasy;
-    margin-left: 0.3em;
-    font-style: italic;
+    font-size: 2.5em;
   }
   .text {
     text-align: center;
