@@ -1,364 +1,265 @@
 <script>
-import star from "@/assets/etoile.png";
-import ayurveda from "@/assets/ayurveda.png";
-import swedish from "@/assets/swedish.png";
-import shiatsu from "@/assets/shiatsu.png";
-import bali from "@/assets/balinese.png";
-import reflexo from "@/assets/reflexologie.png";
+import contact from "@/assets/phoneMail.png";
+import adress from "@/assets/adress.png";
+import calendar from "@/assets/calendar.png";
+import phone from "@/assets/phone.png";
+import mail from "@/assets/mail.png";
 
 export default {
   data() {
       return {
-        star: star,
-        ayurveda: ayurveda,
-        swedish: swedish,
-        shiatsu: shiatsu,
-        bali: bali,
-        reflexo: reflexo,
+        contact: contact,
+        phone: phone,
+        mail: mail,
+        adress: adress,
+        calendar: calendar
         };
     },
 }
 </script>
 
 <template>
-  <div id="product">
-    <h1 class="titles-components">
-      Les massages que je vous propose
-    </h1>
-    <hr>
-      <div class="container">
-        <section class="massages">
-          <!--Massage étoile-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="star">
-              <h3 class="massage-title">
-                Massage étoile
-              </h3>
-            </div>
-            <p>
-              Appaisement et profonde relaxation par la stimulation des zones réflexes des cinq extrémités du corps (tête, mains, pieds)
-            </p>
+  <div id="contactContainer">
+    <section class="contact">
+      <h1 class="titles-components">
+        Contactez-moi pour toutes prestations
+      </h1>
+      <hr>
+      <div class="all-cards">
+        <div class="card">
+          <img class="icon" alt="icon" v-bind:src="contact">
+          <!--<h3>
+            Télephone & E-mail
+          </h3>-->
+          <div class="card-contact">
+            <a href="tel:+33769832189"><img class="sub-icon" alt="icon" v-bind:src="phone">07 69 83 21 89</a>
+            <a href="mailto:auxmainsdamahe@outlook.fr?subject=Mail envoyé du site" target="_blank"><img class="sub-icon" alt="icon" v-bind:src="mail">Envoyez-moi un mail</a>
           </div>
-          <!--Massage ayurvédique-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="ayurveda">
-              <h3 class="massage-title">
-                Ayurvédique
-              </h3>
-            </div>
-            <p>
-              Relaxation qui permet de relâcher les tensions nerveuses et musculaires qui entravent la libre circulation de l'énergie dans le corps.
-            </p>
-          </div>
-          <!--Massage suedois-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="swedish">
-              <h3 class="massage-title">
-                Suédois
-              </h3>
-            </div>
-            <p>
-              Détend et relaxe le corps comme l’esprit. Particulièrement apaisant, il est apprécié pour sa capacité à diminuer les effets du stress sur le corps.            
-            </p>
-          </div>
-          <!--Massage shiatsu-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="shiatsu">
-              <h3 class="massage-title">
-                Shiatsu
-              </h3>
-            </div>
-            <p>
-              Étirements et pressions sur certains points de façon à faciliter la libre circulation de l'énergie.            
-            </p>
-          </div>
-          <!--Massage balinais-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="bali">
-              <h3 class="massage-title">
-                Balinais
-              </h3>
-            </div>
-            <p>
-              Harmonise différentes techniques à la fois relaxantes et énergétiques, douces et toniques. Il apporte ainsi une parfaite harmonie entre le corps et l’esprit.              
-            </p>
-          </div>
-          <!--Massage réflexologie-->
-          <div class="massage-type">
-            <div class="title">
-              <img class="icon" v-bind:src="reflexo">
-              <h3 class="massage-title">
-                Réflexologie plantaire douce
-              </h3>
-            </div>
-            <p>
-              Relaxation profonde, bien-être global tant sur le plan physique que psychique et permet de relâcher les tensions.              
-            </p>
-          </div>
-        </section>
-      </div>
+        </div>
+        <div class="card">
+          <img class="icon" alt="icon" v-bind:src="adress">
+          <!--<h3>
+            Adresses
+          </h3>-->
+          <p>
+            Quincy-Voisins
+          </p>
+          <p>
+            Croissy-Beaubourg
+          </p>
+        </div>
+        <div class="card">
+          <img class="icon" alt="icon" v-bind:src="calendar">
+          
+          <table>
+            <thead>
+              <!--<tr>
+                <th colspan="2">Horaires</th>
+              </tr>-->
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lundi </td>
+                <td>10h - 19h</td>
+              </tr>
+              <tr>
+                <td>Mardi </td>
+                <td>10h - 19h</td>
+              </tr>
+              <tr>
+                <td>Jeudi </td>
+                <td>10h - 19h</td>
+              </tr>
+              <tr>
+                <td class="day">Vendredi </td>
+                <td>10h - 19h</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Le weekend sur demande</p>
+        </div>
+    </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
-
+#contactContainer {
+  background-color: white;
+  text-align: center;
+}
 .titles-components {
-  color: #2f4858;
   font-family: 'Baskerville';
   font-style: italic;
-}
-p { 
-  color: #548086;
-}
-.massage-title {
-  font-weight: 600;
-  color: #2f4858;
 }
 hr {
   width:50%;
   margin: auto;
   margin-bottom: 1em;
 }
-p {
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adress {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titles-components,
+h3,
+th{
+  color: #2F4858;
+}
+.card {
+  background-color: #eff8f0;
+}
+.card-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+p { 
   margin-top: 0.5em;
 }
-.massage-type {
-  background-color: #eff8f0;
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px none;
+  border-radius: 1em;
+  padding: 0.4em;
+  box-shadow: 5px 5px 15px #c9cbc9;
+  margin-bottom: 0.7em;
+}
+a,
+tr,
+p {
+  color: #548086;
+}
+td {
+  text-align: center;
+}
+.day {
+  padding-right: 1.5em;
+}
+table {
+  margin-top: 1.2em;
 }
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
-  #product {
-  margin: 1.6em;
-}
+  #contactContainer {
+    margin: 1.6em;
+  }
   .titles-components {
     font-size: 2em;
     text-align: center;
-    margin: 0.5em;
+    margin: 0.6em;
     padding-top: 1.5em;
   }
-  .massage-type {
+  .all-cards {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 1.5em;
-    padding: 1.5em;
-    margin-bottom: 1.2em;
-
-  }
-  .title {
-    display: flex;
     align-items: center;
-    margin-bottom: 0.5em;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 1.5em;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+    height: 19em;
+    align-items: center;
   }
   .icon {
     width: 4em;
-    margin-right: 0.9em;
+  }
+  .sub-icon {
+    width: 2em;
+  }
+  p, td {
+    font-size: 1.1em;
   }
 }
 
-/*Médium smartphone device */
-@media only screen and (min-width: 681px) {
-  #product {
-  margin: 1.6em;
-  }
-  .titles-components {
-    font-size: 1.9em;
-    text-align: center;
-    margin: 0.5em;
-    padding-top: 1.5em;
-  }
-  .massage-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 1.5em;
-    padding: 1.5em;
-    margin-bottom: 1.2em;
-    height: 13em;
-  }
-  .title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5em;
-  }
-  .icon {
-    width: 4em;
-    margin-right: 0.9em;
-  }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  #product {
+  #contactContainer {
     margin: 2.5em;
   }
   .titles-components {
     text-align: center;
-    margin: 0.5em;
+    margin: 1em;
     padding-top: 1.5em;
     font-size: 2.8em;
   }
-  hr {
-    width: 70%;
-  }
-  .massage-type {
+  .all-cards {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 1.5em;
-    padding: 1.5em;
+    padding: 1.2em;
     margin-bottom: 1.2em;
-    height: 15em;
-  }
-  .title {
-    display: flex;
+    height: 19em;
     align-items: center;
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
+  }
+  .card-contact {
+    display: inline-flex;
+    justify-content: space-evenly;
   }
   .icon {
-    width: 3em;
-    margin-right: 0.9em;
+    width: 4em;
   }
-  p {
+  .sub-icon {
+    width: 1.8em;
+  }
+  th,
+  tr {
     font-size: 1em;
+    margin-bottom: 0.5em;
   }
-}
-
-/* Medium devices (landscape tablets, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .titles-components {
-    text-align: center;
-    margin: 0.5em;
-    padding-top: 1.5em;
-    font-weight: 500;
-    font-size: 2.5em;
+  a,
+  p,
+  td {
+    font-size: 1.2em;
   }
-  hr {
-    width:45%;
-  }
-  .massages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .massage-type {
+  a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 1.5em;
-    padding: 1.5em;
-    margin: 1em;
-    height: 15em;
-    width: 28em;
-  }
-  .title {
-    display: flex;
     align-items: center;
-    margin-bottom: 0.5em;
-    font-size: x-large;
-  }
-  .icon {
-    width: 3em;
-    margin-right: 0.9em;
-  }
-  p {
-    font-size: 1em;
   }
 }
 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #product {
-  margin: 2.5em;
-  }
-  .titles-components {
-    text-align: center;
-    margin: 1em;
-    padding-top: 1.5em;
-    font-weight: 500;
-    font-size: 2.5em;
-  }
-  hr {
-  width:35%;
-  }
-  .massages {
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (min-width: 800px) {
+  .all-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .massage-type {
+  .card {
+    width: 16em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 1.5em;
-    padding: 1.5em;
-    margin: 1em;
-    height: 16em;
-    width: 35em;
-  }
-  .title {
-    display: flex;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+    height: 24em;
     align-items: center;
-    margin-bottom: 0.5em;
-    font-size: large;
   }
-  .icon {
-    width: 3em;
-    margin-right: 0.9em;
-  }
-  p {
-    font-size: 1em;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1700px and up) */
-@media only screen and (min-width: 1700px) {
-
-.titles-components {
-  text-align: center;
-  margin: 1em;
-  padding-top: 1.5em;
-  font-weight: 500;
-  font-size: 2.8em;
-}
-hr {
-  width:30%;
-}
-.massages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.massage-type {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 1.5em;
-  padding: 1.5em;
-  margin: 1em;
-  height: 19em;
-  width: 50em;
-}
-.title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5em;
-  font-size: x-large;
-}
-.icon {
-  width: 3.5em;
-  margin-right: 0.9em;
-}
-p {
-  font-size: 1.2em;
-}
 }
 </style>
+
