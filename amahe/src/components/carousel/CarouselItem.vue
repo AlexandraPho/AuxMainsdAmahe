@@ -68,6 +68,4 @@ img {
     width: 400px;
   }
 }
-
-
 </style>

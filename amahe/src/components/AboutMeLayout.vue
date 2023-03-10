@@ -206,4 +206,121 @@ export default {
     margin-top: 1em;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+    background-color: #FFFAF1;
+    margin: 2.5em;
+    padding: 3em;
+    border-radius: 1em;
+  }
+  .block-container {
+    text-align: start;
+    margin: 1.9em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em;
+  }
+  #aboutMe .portrait {
+    width: 35em;
+    height: auto;
+  }
+  .portrait {
+    border-radius: 1em;
+  }
+  .text {
+    color: #548086;
+  }
+  .titles {
+    font-size: 2.8em;
+    margin-bottom: 0.8em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Large devices (large laptops and desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #aboutMe {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAF1;
+    border-radius: 1.5em;
+    padding: 2.5em;
+
+  }
+  #aboutMe .portrait {
+    display: flex;
+    width: 35em;
+    margin: 1em;
+    border-radius: 1.5em;
+    height: auto;
+  }
+  .block-container {
+    padding: 2em;
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles {
+    margin-bottom: 0.5em;
+  }
+  .text {
+    width: 80%;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #aboutMe {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #FFFAF1;
+    border-radius: 1.5em;
+    padding: 2.5em;
+
+  }
+  #aboutMe .portrait {
+    display: flex;
+    width: 30em;
+    margin: 1em;
+    border-radius: 1.5em;
+    height: auto;
+  }
+  .block-container {
+    padding: 2em;
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .titles {
+    margin-bottom: 0.5em;
+  }
+  .text {
+    width: 80%;
+    text-align: start;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+}
 </style>

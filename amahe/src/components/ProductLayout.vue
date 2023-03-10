@@ -1,20 +1,18 @@
 <script>
-import star from "@/assets/etoile.png";
-import ayurveda from "@/assets/ayurveda.png";
-import swedish from "@/assets/swedish.png";
-import shiatsu from "@/assets/shiatsu.png";
-import bali from "@/assets/balinese.png";
-import reflexo from "@/assets/reflexologie.png";
+import contact from "@/assets/phoneMail.png";
+import adress from "@/assets/adress.png";
+import calendar from "@/assets/calendar.png";
+import phone from "@/assets/phone.png";
+import mail from "@/assets/mail.png";
 
 export default {
   data() {
       return {
-        star: star,
-        ayurveda: ayurveda,
-        swedish: swedish,
-        shiatsu: shiatsu,
-        bali: bali,
-        reflexo: reflexo,
+        contact: contact,
+        phone: phone,
+        mail: mail,
+        adress: adress,
+        calendar: calendar
         };
     },
 }
@@ -106,7 +104,6 @@ export default {
 </template>
 
 <style scoped>
-
 .titles-components {
   color: #2f4858;
   font-family: 'Baskerville';
@@ -124,13 +121,12 @@ hr {
   margin: auto;
   margin-bottom: 1em;
 }
-p {
-  margin-top: 0.5em;
-}
 .massage-type {
   background-color: #eff8f0;
 }
-
+p {
+  margin-top: 0.5em;
+}
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
   #product {
@@ -149,7 +145,6 @@ p {
     border-radius: 1.5em;
     padding: 1.5em;
     margin-bottom: 1.2em;
-
   }
   .title {
     display: flex;
@@ -161,7 +156,6 @@ p {
     margin-right: 0.9em;
   }
 }
-
 /*Médium smartphone device */
 @media only screen and (min-width: 681px) {
   #product {
@@ -175,8 +169,7 @@ p {
   }
   .massage-type {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     border-radius: 1.5em;
     padding: 1.5em;
     margin-bottom: 1.2em;
@@ -184,15 +177,9 @@ p {
   }
   .title {
     display: flex;
-    align-items: center;
-    margin-bottom: 0.5em;
-  }
-  .icon {
-    width: 4em;
     margin-right: 0.9em;
   }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #product {
@@ -230,7 +217,6 @@ p {
     font-size: 1em;
   }
 }
-
 /* Medium devices (landscape tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
   .titles-components {
@@ -262,7 +248,7 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 0.5em;
-    font-size: x-large;
+    font-size: large;
   }
   .icon {
     width: 3em;
@@ -272,8 +258,6 @@ p {
     font-size: 1em;
   }
 }
-
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #product {
@@ -318,10 +302,8 @@ p {
     font-size: 1em;
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1700px and up) */
 @media only screen and (min-width: 1700px) {
-
 .titles-components {
   text-align: center;
   margin: 1em;
