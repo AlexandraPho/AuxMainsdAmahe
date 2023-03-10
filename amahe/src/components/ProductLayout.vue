@@ -25,6 +25,7 @@ export default {
     <h1 class="titles-components">
       Les massages que je vous propose
     </h1>
+    <hr>
       <div class="container">
         <section class="massages">
           <!--Massage étoile-->
@@ -48,7 +49,7 @@ export default {
               </h3>
             </div>
             <p>
-              Relaxation profonde, permet de relâcher les tensions nerveuses et musculaires qui entravent la libre circulation de l'énergie dans le corps.ulation des zones réflexes des cinq extrémités du corps (tête, mains, pieds)
+              Relaxation qui permet de relâcher les tensions nerveuses et musculaires qui entravent la libre circulation de l'énergie dans le corps.
             </p>
           </div>
           <!--Massage suedois-->
@@ -105,18 +106,23 @@ export default {
 </template>
 
 <style scoped>
-#product {
-  margin-top: 2em;
-}
+
 .titles-components {
   color: #2f4858;
+  font-family: 'Baskerville';
+  font-style: italic;
 }
 p { 
   color: #548086;
 }
 .massage-title {
-  font-weight: bold;
+  font-weight: 600;
   color: #2f4858;
+}
+hr {
+  width:50%;
+  margin: auto;
+  margin-bottom: 1em;
 }
 p {
   margin-top: 0.5em;
@@ -127,13 +133,14 @@ p {
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
+  #product {
+  margin: 1.6em;
+}
   .titles-components {
+    font-size: 2em;
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
     padding-top: 1.5em;
-  }
-  .massages {
-    margin: 2em;
   }
   .massage-type {
     display: flex;
@@ -142,7 +149,7 @@ p {
     border-radius: 1.5em;
     padding: 1.5em;
     margin-bottom: 1.2em;
-    height: 19em;
+
   }
   .title {
     display: flex;
@@ -153,5 +160,205 @@ p {
     width: 4em;
     margin-right: 0.9em;
   }
+}
+
+/*Médium smartphone device */
+@media only screen and (min-width: 681px) {
+  #product {
+  margin: 1.6em;
+  }
+  .titles-components {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 0.5em;
+    padding-top: 1.5em;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin-bottom: 1.2em;
+    height: 13em;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+  .icon {
+    width: 4em;
+    margin-right: 0.9em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #product {
+    margin: 2.5em;
+  }
+  .titles-components {
+    text-align: center;
+    margin: 0.5em;
+    padding-top: 1.5em;
+    font-size: 2.8em;
+  }
+  hr {
+    width: 70%;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin-bottom: 1.2em;
+    height: 15em;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+  .icon {
+    width: 3em;
+    margin-right: 0.9em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .titles-components {
+    text-align: center;
+    margin: 0.5em;
+    padding-top: 1.5em;
+    font-weight: 500;
+    font-size: 2.5em;
+  }
+  hr {
+    width:45%;
+  }
+  .massages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin: 1em;
+    height: 15em;
+    width: 28em;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: x-large;
+  }
+  .icon {
+    width: 3em;
+    margin-right: 0.9em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #product {
+  margin: 2.5em;
+  }
+  .titles-components {
+    text-align: center;
+    margin: 1em;
+    padding-top: 1.5em;
+    font-weight: 500;
+    font-size: 2.5em;
+  }
+  hr {
+  width:35%;
+  }
+  .massages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .massage-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin: 1em;
+    height: 16em;
+    width: 35em;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: large;
+  }
+  .icon {
+    width: 3em;
+    margin-right: 0.9em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1700px and up) */
+@media only screen and (min-width: 1700px) {
+
+.titles-components {
+  text-align: center;
+  margin: 1em;
+  padding-top: 1.5em;
+  font-weight: 500;
+  font-size: 2.8em;
+}
+hr {
+  width:30%;
+}
+.massages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.massage-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1.5em;
+  padding: 1.5em;
+  margin: 1em;
+  height: 19em;
+  width: 50em;
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  font-size: x-large;
+}
+.icon {
+  width: 3.5em;
+  margin-right: 0.9em;
+}
+p {
+  font-size: 1.2em;
+}
 }
 </style>
