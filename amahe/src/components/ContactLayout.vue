@@ -20,66 +20,68 @@ export default {
 
 <template>
   <div id="contactContainer">
-    <section class="contact">
-      <h1 class="titles-components">
+    <h1 class="titles-components">
         Contactez-moi pour toutes prestations
-      </h1>
-      <hr>
-      <div class="contact-card"> 
-                <div class="contact-infos">
-                    <div class="item">
-                        <img class="icon" alt="icon" v-bind:src="adress">
-                        <address class="text">
-                            <p>Quincy-Voisins, 77860</p>
-                            <p>Croissy-Beaubourg, 77183</p>
-                        </address>                          
-                    </div>
-                    <hr>
-                    <div class="item">
-                      <img class="sub-icon" alt="icon" v-bind:src="phone">
-                        <div class="text">
-                            <a href="tel:+33769832189">07 69 83 21 89</a>
-                        </div>                          
-                    </div>
-                    <hr>
-                    <div class="item">
-                      <img class="sub-icon" alt="icon" v-bind:src="mail">
-                        <div class="text">
-                          <a href="mailto:auxmainsdamahe@outlook.fr?subject=Mail envoyé du site" target="_blank">Envoyez-moi un mail</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="item">
-                      <img class="icon" alt="icon" v-bind:src="calendar">
-                        <div class="text">
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>Lundi </td>
-                                <td>10h - 19h</td>
-                              </tr>
-                              <tr>
-                                <td>Mardi </td>
-                                <td>10h - 19h</td>
-                              </tr>
-                              <tr>
-                                <td>Jeudi </td>
-                                <td>10h - 19h</td>
-                              </tr>
-                              <tr>
-                                <td class="day">Vendredi </td>
-                                <td>10h - 19h</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <p>Le weekend sur demande</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div> 
-    </section>
-    <div id="map" style="top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20983.21825499983!2d2.8406314344982495!3d48.898199435308435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8a6e446e559b9%3A0x40b82c3688c4ed0!2s77860%20Quincy-Voisins%2C%20France!5e0!3m2!1sfr!2sus!4v1678459827973!5m2!1sfr!2sus" width="360" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </h1>
+    <hr>
+    <div class="wrap-contact">
+      <section class="contact">
+        <div class="contact-card"> 
+                  <div class="contact-infos">
+                      <div class="item">
+                          <img class="icon" alt="icon" v-bind:src="adress">
+                          <address class="text">
+                              <p>Quincy-Voisins, 77860</p>
+                              <p>Croissy-Beaubourg, 77183</p>
+                          </address>                          
+                      </div>
+                      <hr>
+                      <div class="item">
+                        <img class="sub-icon" alt="icon" v-bind:src="phone">
+                          <div class="text">
+                              <a href="tel:+33769832189">07 69 83 21 89</a>
+                          </div>                          
+                      </div>
+                      <hr>
+                      <div class="item">
+                        <img class="sub-icon" alt="icon" v-bind:src="mail">
+                          <div class="text">
+                            <a href="mailto:auxmainsdamahe@outlook.fr?subject=Mail envoyé du site" target="_blank">Envoyez-moi un mail</a>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="item">
+                        <img class="icon" alt="icon" v-bind:src="calendar">
+                          <div class="text">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>Lundi </td>
+                                  <td>10h - 19h</td>
+                                </tr>
+                                <tr>
+                                  <td>Mardi </td>
+                                  <td>10h - 19h</td>
+                                </tr>
+                                <tr>
+                                  <td>Jeudi </td>
+                                  <td>10h - 19h</td>
+                                </tr>
+                                <tr>
+                                  <td class="day">Vendredi </td>
+                                  <td>10h - 19h</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p>Le weekend sur demande</p>
+                          </div>
+                      </div>
+                  </div>                  
+        </div> 
+      </section>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20983.21825499983!2d2.8406314344982495!3d48.898199435308435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8a6e446e559b9%3A0x40b82c3688c4ed0!2s77860%20Quincy-Voisins%2C%20France!5e0!3m2!1sfr!2sus!4v1678459827973!5m2!1sfr!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+      </div>
     </div>
   </div>
 </template>
@@ -148,6 +150,9 @@ td {
 table {
   margin-top: 1.5em;
 }
+iframe {
+  border-radius: 1.5em;
+}
 
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
@@ -165,8 +170,8 @@ table {
     justify-content: center;
   }
   .contact-infos {
-    width: 20em;
-    padding: 1.5em;
+    width: 17em;
+    padding: 1.5em
   }
   .item {
     display: flex;
@@ -195,7 +200,6 @@ table {
     max-width: 50em;
     margin: auto 100px;
     padding: 1.2em;
-    position: absolute;
   }
   .contact-infos {
     -webkit-align-self: center;
@@ -210,9 +214,10 @@ table {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: center;
     margin: 0.8em;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
   }
   .contact .contact-infos .item .icon,
   .contact .contact-infos .item .sub-icon {
@@ -233,6 +238,10 @@ table {
   }
   p, td {
     font-size: 1em;
+  }
+  iframe {
+    width: 250px;
+     height:250px;
   }
 }
 /*Smartphone Size*/
@@ -320,6 +329,10 @@ table {
   p, td {
     font-size: 1em;
   }
+  iframe {
+    width: 400px;
+    height:400px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -394,6 +407,10 @@ table {
   td {
     font-size: 1.2em;
   }
+  iframe {
+    width: 500px;
+     height:500px;
+  }
 }
 
 /* Medium devices (landscape tablets, 900px and up) */
@@ -409,6 +426,15 @@ table {
   .item {
     display: flex;
   }
+  .wrap-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    width: 500px;
+     height:500px;
+  }
 }
 
 /* Medium devices (landscape tablets, 1200px and up) */
@@ -416,8 +442,30 @@ table {
  hr {
   width: 30%;
  }
- #map {
-
- }
+ .contact-infos[data-v-e37e1c9f] {
+    width: 40em;
+    padding: 1.5em;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+ .contact .contact-infos .item .icon,
+  .contact .contact-infos .item .sub-icon {
+    display: block;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #2F4858;
+    line-height: 34px;
+    text-align: center;
+    padding: 0.3em;
+    margin: 25px 25px;
+  }
+  .wrap-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 </style>

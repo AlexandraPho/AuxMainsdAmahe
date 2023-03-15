@@ -12,7 +12,9 @@ export default {
 
 <template>
   <div id="main">
-    <img class="hand1" v-bind:src="hand1">
+    <div class="image-container">
+    <img class="hand1" v-bind:src="hand1" style="max-width: 100%; height: auto;">
+  </div>
       <section class="block-container">
         <div class="text">
           <h2 class="first-title"> 
@@ -361,11 +363,11 @@ export default {
     display: none;
   }
   .hand1 {
-    margin-top: 8em;
     max-width: 100%;
+    height: auto;
   }
   .first-title {
-    width: 16em;
+    width: 25em;
     position: absolute;
     top: 30%;
     left: 45%;
@@ -374,7 +376,7 @@ export default {
   .first-span-title,
   .second-span-title {
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   .text {
     text-align: center;
@@ -389,6 +391,9 @@ export default {
   .text {
     text-align: center;
     margin-bottom: 1.8em;
+  }
+  p {
+    width: 50em;
   }
 }
 </style>

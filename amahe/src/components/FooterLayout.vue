@@ -31,11 +31,11 @@ export default {
           <a class="icon" href="https://www.facebook.com/auxmainsdamahe" target="_blank"><img class="fb-icon" alt="facebook-logo" v-bind:src="fb"></a>
           <a class="icon" href="https://www.instagram.com/aux_mains_damahe/" target="_blank"><img class="inst-icon" alt="instagram-logo" v-bind:src="inst"></a>
         </div>
-        <div class="condition">
+        <!--<div class="condition">
           <a href="#" class="condition-footer">Code Déontologique</a>
           <p class="condition-footer">|</p>
           <a href="#" class="condition-footer">CGV</a>
-        </div>
+        </div>-->
         <div class="createBy">
           <p>
             Copyright All Right Reserved 2023 - Alexandra Pinheiro
