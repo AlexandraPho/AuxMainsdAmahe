@@ -14,6 +14,9 @@ import menu from "@/assets/menu.png";
       showMenu() {
         this.showMobileMenu = !this.showMobileMenu;
       },
+      closeMenu() {
+        this.showMobileMenu = false;
+      },
     },
   };
 </script>
@@ -35,11 +38,11 @@ import menu from "@/assets/menu.png";
       <!--Menu content-->
       <nav class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
         <ul class="nav-items">
-          <a href="#aboutMe"><li>À propos de moi</li></a>
-          <a href="#product"><li>Les massages</li></a>
-          <a href="#prices"><li>Les tarifs</li></a>
+          <a href="#aboutMe" @click="closeMenu"><li>À propos de moi</li></a>
+          <a href="#product" @click="closeMenu"><li>Les massages</li></a>
+          <a href="#prices" @click="closeMenu"><li>Les tarifs</li></a>
         </ul>
-        <button class="btn-form"><a href="#contactContainer" class="button">Prendre rendez-vous</a></button>
+        <button class="btn-form"><a href="#contactContainer" class="button" @click="closeMenu">Prendre rendez-vous</a></button>
       </nav>
   </header>
 </template>

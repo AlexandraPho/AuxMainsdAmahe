@@ -464,6 +464,7 @@ iframe {
   }
   .wrap-contact {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
