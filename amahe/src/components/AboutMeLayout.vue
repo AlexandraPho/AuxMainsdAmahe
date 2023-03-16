@@ -10,7 +10,7 @@ export default {
       return {
         portrait: portrait,
         slides: [
-          "src/assets/12.jpg",
+          "../src/assets/12.jpg",
           "src/assets/13.jpg",
           "src/assets/hand2.jpg",
           "src/assets/hand5.jpg",
