@@ -45,13 +45,11 @@ export default {
   }
 
   .first-span-title {
-    font-weight: bold;
+    font-weight: 500;
   }
   .second-span-title {
     font-family: 'Baskerville';
-    margin-left: 0.3em;
     font-style: italic;
-    font-weight: 500;
   }
   .btn-form {
     border: none;
@@ -268,9 +266,9 @@ export default {
   }
   .first-title {
     position: absolute;
-    top: 24%;
-    left: 45%;
-    transform: translate(-40%, 60%);
+    width: 40em;
+    top: 25%;
+    transform: translate(-45%, 60%);
   }
   .first-span-title,
   .second-span-title {
@@ -319,7 +317,7 @@ export default {
     max-width: 100%;
   }
   .first-title {
-    width: 15em;
+    width: 45em;
     position: absolute;
     top: 28%;
     left: 45%;
@@ -367,10 +365,9 @@ export default {
     height: auto;
   }
   .first-title {
-    width: 25em;
+    width: 45em;
     position: absolute;
-    top: 30%;
-    left: 45%;
+    top: 40%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
