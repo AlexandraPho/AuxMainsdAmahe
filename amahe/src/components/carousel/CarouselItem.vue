@@ -18,7 +18,8 @@ export default {
       @mouseenter="$emit('mouseenter')"
       @mouseout="$emit('mouseout')"
     >
-      <img :src="slide" />
+     
+      <img :src="slide.img" alt="loading">
     </div>
   </transition>
 </template>

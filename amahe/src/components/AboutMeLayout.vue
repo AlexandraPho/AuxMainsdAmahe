@@ -10,11 +10,11 @@ export default {
       return {
         portrait: portrait,
         slides: [
-          "../src/assets/12.jpg",
-          "../src/assets/13.jpg",
-          "../src/assets/hand2.jpg",
-          "../src/assets/hand5.jpg",
-          "../src/assets/amahe2.jpg",
+          {img: "src/assets/owner-two.jpg"},
+          {img: "src/assets/owner.jpg"},
+          {img: "src/assets/hand2.jpg"},
+          {img: "src/assets/hand5.jpg"},
+          {img: "src/assets/amahe2.jpg"},
         ],
         
       }
@@ -28,7 +28,7 @@ export default {
 
 <template>
   <div id="aboutMe">
-    <img class="portrait" v-bind:src="portrait">
+    <img class="portrait" v-bind:src="portrait" alt="portrait">
       <section class="block-container">
         <div class="text">
           <h2 class="titles">

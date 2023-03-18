@@ -123,7 +123,8 @@ p {
 
   .fb-i.second-title-footer {
   font-size: 1.2em;
-  }con,
+  }
+  .fb-icon,
   .inst-icon {
     width: 3em;
   }

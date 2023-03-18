@@ -135,7 +135,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
   }
 a:hover {
     color: #006D61;
@@ -216,20 +215,21 @@ iframe {
             flex-wrap: wrap;
             justify-content: center;
     margin: 0.8em;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 
   }
   .contact .contact-infos .item .icon,
   .contact .contact-infos .item .sub-icon {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 1px solid #2F4858;
     line-height: 34px;
     text-align: center;
-    padding: 0.3em;
-    margin-right: 15px;
+    padding: 0.5em;
+    margin: 10px;
   }
   .item {
   display: flex;
@@ -312,13 +312,13 @@ iframe {
   .contact .contact-infos .item .sub-icon {
     display: block;
     font-size: 16px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 1px solid #2F4858;
     line-height: 34px;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.5em;
     margin-right: 15px;
   }
   .item {
@@ -379,13 +379,13 @@ iframe {
   .contact .contact-infos .item .sub-icon {
     display: block;
     font-size: 16px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #2F4858;
     line-height: 34px;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.5em;
     margin-right: 25px;
   }
   .icon {
@@ -453,13 +453,13 @@ iframe {
   .contact .contact-infos .item .sub-icon {
     display: block;
     font-size: 16px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #2F4858;
     line-height: 34px;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.5em;
     margin: 25px 25px;
   }
   .wrap-contact {
