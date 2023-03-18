@@ -146,7 +146,7 @@ span {
 /*Smartphone Size*/
 @media only screen and (max-width: 680px) {
   #prices {
-    margin: 1.6em;
+    margin: 5em 1.6em;
   }
   .titles-components {
     font-size: 2em;
@@ -220,7 +220,7 @@ span {
 /*Smartphone Size*/
 @media only screen and (min-width: 681px) {
   #prices {
-    margin: 1.6em;
+    margin: 5.5em 1.6em;
   }
   .titles-components {
     font-size: 2em;
@@ -296,7 +296,7 @@ span {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #prices {
-    margin: 2.5em;
+    margin: 6.5em 2.5em;
   }
   .titles-components {
     text-align: center;
@@ -381,7 +381,7 @@ span {
 /* Medium devices (landscape tablets, 992px and up) */
 @media only screen and (min-width: 900px) {
   #prices {
-    margin: 2.5em;
+    margin: 6.5em 2.5em;;
   }
   .titles-components {
     text-align: center;
@@ -466,7 +466,7 @@ span {
 /* Medium devices (landscape tablets, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #prices {
-    margin: 2.5em;
+    margin: 6.5em 2.5em;
   }
   .titles-components {
     text-align: center;
