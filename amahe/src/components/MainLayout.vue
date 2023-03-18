@@ -18,8 +18,8 @@ export default {
       <section class="block-container">
         <div class="text">
           <h2 class="first-title"> 
-            <span class="first-span-title">Aux mains d'</span>
-            <span class="second-span-title">Amahé</span>
+            <span class="first-span-title">Aux mains </span>
+            <span class="second-span-title">d'Amahé</span>
           </h2>
           <!--<h3 class="second-title">
             À l'écoute de votre corps
@@ -43,7 +43,10 @@ export default {
     margin-top: 9em;
     filter: brightness(0.6);
   }
-
+  .first-span-title,
+  .second-span-title {
+    color: white;
+  }
   .first-span-title {
     font-weight: 500;
   }
@@ -128,7 +131,6 @@ export default {
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 1.3em;
   }
   .text {
@@ -176,7 +178,6 @@ export default {
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 1.8em;
   }
   .text {
@@ -224,7 +225,6 @@ export default {
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 2em;
   }
   .text {
@@ -266,13 +266,11 @@ export default {
   }
   .first-title {
     position: absolute;
-    width: 40em;
     top: 25%;
     transform: translate(-45%, 60%);
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 2.5em;
   }
   .text {
@@ -325,7 +323,6 @@ export default {
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 2.5em;
   }
   .text {
@@ -372,7 +369,6 @@ export default {
   }
   .first-span-title,
   .second-span-title {
-    color: white;
     font-size: 3.5em;
   }
   .text {
