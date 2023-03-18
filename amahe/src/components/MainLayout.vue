@@ -219,8 +219,7 @@ export default {
   }
   .first-title {
     position: absolute;
-    top: 20%;
-    left: 45%;
+    top: 15%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
@@ -266,7 +265,7 @@ export default {
   }
   .first-title {
     position: absolute;
-    top: 25%;
+    top: 20%;
     transform: translate(-45%, 60%);
   }
   .first-span-title,
@@ -315,15 +314,13 @@ export default {
     max-width: 100%;
   }
   .first-title {
-    width: 45em;
     position: absolute;
-    top: 28%;
-    left: 45%;
+    top: 20%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
   .second-span-title {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   .text {
     text-align: center;
@@ -362,9 +359,8 @@ export default {
     height: auto;
   }
   .first-title {
-    width: 45em;
     position: absolute;
-    top: 40%;
+    top: 30%;
     transform: translate(-40%, 60%);
   }
   .first-span-title,
@@ -387,6 +383,19 @@ export default {
   }
   p {
     width: 50em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+  .first-title {
+    position: absolute;
+    top: 40%;
+    transform: translate(-40%, 60%);
+  }
+  .first-span-title,
+  .second-span-title {
+    font-size: 4em;
   }
 }
 </style>
