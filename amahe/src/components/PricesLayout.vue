@@ -6,7 +6,7 @@ export default {
 <template>
   <div id="prices">
     <h1 class="titles-components">
-      Je choisi le temps qui me fait plaisir
+      Je choisis le temps qui me fait plaisir
     </h1>
     <div class="container">
       <section class="prices">
